@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
-import { media } from '~/styles';
+import { mediaStyles } from '~/styles';
 import { Box } from '~/components/atoms';
 
 export const Wrapper = styled(Box)`
@@ -37,12 +37,14 @@ export const CardDescription = styled.p`
 export const TechnologiesList = styled.ul`
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  ${media('lg', 'flex-direction: row')}
+  ${mediaStyles('lg', 'flex-direction: row')}
 `;
 
 export const TechnologiesListItem = styled.li`
   color: ${({ theme }) => rgba(theme.color.font, 0.5)};
+  white-space: nowrap;
   margin: 0 0 0.2rem 0;
-  ${media('lg', 'margin: 0 0.2rem 0 0')}
+  ${mediaStyles('lg', 'margin: 0 0.2rem 0.1rem 0')}
 `;

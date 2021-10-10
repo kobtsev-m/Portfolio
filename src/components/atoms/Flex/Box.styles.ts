@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Breakpoint, Ruleset } from '~/types';
-import { media, mediaProperty } from '~/styles';
+import { mediaStyles, mediaProperty } from '~/styles';
 
 type AlignType = 'center' | 'start' | 'end' | 'between' | 'around';
 
@@ -43,8 +43,8 @@ export const Box = styled.div<BoxProps>`
   display: ${({ flex, hideAt }) =>
     hideAt ? 'none' : flex ? 'flex' : 'block'};
   ${({ flex, hideAt }) =>
-    hideAt && media(hideAt, `display: ${flex ? 'flex' : 'block'}`)};
-  ${({ showAt }) => showAt && media(showAt, 'display: none !important')};
+    hideAt && mediaStyles(hideAt, `display: ${flex ? 'flex' : 'block'}`)};
+  ${({ showAt }) => showAt && mediaStyles(showAt, 'display: none !important')};
   flex-wrap: ${({ flexWrap }) => flexWrap && 'wrap'};
   flex-direction: ${({ flexDirection }) => flexDirection};
   ${({ align }) => mediaProperty('align-items', align)};

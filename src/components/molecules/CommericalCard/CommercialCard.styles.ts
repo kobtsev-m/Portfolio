@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { Box } from '~/components/atoms';
-import { media } from '~/styles';
+import { mediaStyles } from '~/styles';
 
 export const CardTitle = styled.h3<{ icon?: string }>`
   position: relative;
@@ -56,10 +56,10 @@ export const PreviewImage = styled.div<{ src?: string }>`
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   transition: filter ease-in-out 0.2s;
-  ${media('lg', 'border: none')};
+  ${mediaStyles('lg', 'border: none')};
 `;
 
-export const OverflowLink = styled.a`
+export const OverflowLink = styled.a<{ y: string }>`
   display: none;
   position: absolute;
   top: 50%;
@@ -76,10 +76,10 @@ export const OverflowLink = styled.a`
   opacity: 0;
   transition: opacity ease-in-out 0.2s;
   &:nth-child(2n + 1) {
-    transform: translate(-50%, calc(-50% - 0.5rem));
+    transform: translate(-50%, calc(-50% ${({ y }) => y}));
   }
   &:nth-child(2n) {
-    transform: translate(-50%, calc(-50% + 0.5rem));
+    transform: translate(-50%, calc(-50% ${({ y }) => y}));
   }
 `;
 
@@ -87,13 +87,13 @@ export const TechnologiesList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  ${media('lg', 'flex-direction: row')}
+  ${mediaStyles('lg', 'flex-direction: row')}
 `;
 
 export const TechnologiesListItem = styled.li`
   color: ${({ theme }) => rgba(theme.color.accent, 0.8)};
   margin: 0 0 0.2rem 0;
-  ${media('lg', 'margin: 0 0.2rem 0 0')}
+  ${mediaStyles('lg', 'margin: 0 0.2rem 0 0')}
 `;
 
 export const Wrapper = styled(Box)`
@@ -101,7 +101,7 @@ export const Wrapper = styled(Box)`
   background-color: ${({ theme }) => theme.color.layout};
   border-radius: 10px;
   &:hover ${PreviewImage} {
-    filter: brightness(0.2);
+    filter: brightness(0.17);
     transition: filter ease-in-out 0.2s;
   }
   &:hover ${OverflowLink} {

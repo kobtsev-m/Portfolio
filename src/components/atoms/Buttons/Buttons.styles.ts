@@ -109,7 +109,7 @@ export const CustomButton = styled(ClearButton)<CustomButtonProps>`
   ${({ size }) =>
     !size &&
     css`
-      border-width: 10px;
+      border-width: 8px;
     `}
   ${({ disabled }) =>
     disabled &&

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
-import { media } from '~/styles';
+import { mediaStyles } from '~/styles';
 
 export const Title = styled.h1`
   position: absolute;
@@ -38,8 +38,8 @@ export const Wrapper = styled.div<{ align?: string }>`
   position: relative;
   height: 3.5em;
   font-size: 0.7rem;
-  ${media('sm', 'font-size: 0.8rem')};
-  ${media('md', 'font-size: 1rem')};
+  ${mediaStyles('sm', 'font-size: 0.8rem')};
+  ${mediaStyles('md', 'font-size: 1rem')};
   ${Title} {
     right: ${(props) => (props.align === 'right' ? 0 : '')};
     left: ${(props) => (props.align === 'left' ? 0 : '')};

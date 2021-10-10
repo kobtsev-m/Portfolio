@@ -14,12 +14,20 @@ const AnimatedWrapper = animated(Wrapper);
 
 export const NavCollapse: FC<NavCollapseProps> = (props) => {
   const { navCollapse, setNavCollapse } = props;
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const effect = useSpring({
     transform: navCollapse ? 'translateY(0vh)' : 'translateY(100vh)',
     config: config.slow
   });
+
+  const openResume = () => {
+    console.log('bbro');
+    const win = window.open(`/documents/resume-${i18n.language}`, '_blank');
+    if (win != null) {
+      win.focus();
+    }
+  };
 
   return (
     <Box showAt='xl'>
@@ -55,7 +63,7 @@ export const NavCollapse: FC<NavCollapseProps> = (props) => {
           </Link>
         </NavItem>
         <NavItem>
-          <CustomButton>{t('nav.resume')}</CustomButton>
+          <CustomButton onClick={openResume}>{t('nav.resume')}</CustomButton>
         </NavItem>
       </AnimatedWrapper>
     </Box>

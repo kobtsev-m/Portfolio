@@ -3,6 +3,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Transition, animated, config } from 'react-spring';
+import { aboutData } from '~/constants';
 import { Box, Container, Row, Column, CustomButton } from '~/components/atoms';
 import { BlockHeader } from '~/components/molecules';
 import {
@@ -11,16 +12,6 @@ import {
   TechnologiesList,
   TechnologiesListItem
 } from './About.styles';
-
-const technologies = [
-  { name: 'JavaScript (ES6)', importance: 1 },
-  { name: 'Typescript', importance: 1 },
-  { name: 'Css / Sass', importance: 1 },
-  { name: 'React', importance: 1 },
-  { name: 'Git', importance: 1 },
-  { name: 'Python 3', importance: 0.4 },
-  { name: 'Django', importance: 0.4 }
-];
 
 const AnimatedTechnologiesListItem = animated(TechnologiesListItem);
 
@@ -49,7 +40,7 @@ export const About: FC = () => {
                 </CustomButton>
                 <Box mt='0.3rem'>
                   <TechnologiesList>
-                    {technologies.map((technology, i) => (
+                    {aboutData.technologies.map((technology, i) => (
                       <Transition
                         key={i}
                         items={isVisible}

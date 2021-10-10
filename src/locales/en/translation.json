@@ -8,7 +8,7 @@
     "resume": "Resume"
   },
   "intro": {
-    "title": "Michael Kobtsev",
+    "title": "Mikhail Kobtsev",
     "subtitle": "React Front-end developer in search of interesting projects and proposals",
     "description": "I specialize on creating user interfaces & developing rich web applications. I have experience working with big international company & creating many demo projects in this area.",
     "animate": "Animate"
@@ -23,6 +23,8 @@
     "otherProjects": "Other projects",
     "commercial": "Commercial",
     "demo": "Demo",
+    "showMore": "Show more",
+    "hide": "Hide",
     "ic": {
       "companyName": "Integral Commodities",
       "position": "Front-end developer",
@@ -32,6 +34,15 @@
       "companyName": "AMDB",
       "position": "Full-stack developer",
       "description": "Site for Institute of Biology for storage, editing, searching and analysis researches and experiments"
+    },
+    "portfolio": {
+      "description": "Portfolio site you are currently on"
+    },
+    "cityBikes": {
+      "description": "Mobile app for finding places where people can rent a bicycle in their city"
+    },
+    "cocktailsMenu": {
+      "description": "Site to view cocktails menu based on public API"
     },
     "blogSite": {
       "description": "Example of simple blog site with the division of posts into categories"

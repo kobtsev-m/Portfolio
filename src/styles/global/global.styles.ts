@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { rgba } from 'polished';
-import { media } from './Media';
+import { mediaStyles } from '../media/media.styles';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -16,12 +16,12 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   :root {
-    ${media('xs', 'font-size: 65px')};
-    ${media('sm', 'font-size: 70px')};
-    ${media('md', 'font-size: 75px')};
-    ${media('lg', 'font-size: 80px')};
-    ${media('xl', 'font-size: 85px')};
-    ${media('xxl', 'font-size: 90px')};
+    ${mediaStyles('xs', 'font-size: 65px')};
+    ${mediaStyles('sm', 'font-size: 70px')};
+    ${mediaStyles('md', 'font-size: 75px')};
+    ${mediaStyles('lg', 'font-size: 80px')};
+    ${mediaStyles('xl', 'font-size: 85px')};
+    ${mediaStyles('xxl', 'font-size: 90px')};
   }
   hr {
       border: none;

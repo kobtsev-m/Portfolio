@@ -23,6 +23,9 @@ import AvatarJson from './json/avatar1.min.json';
 import MoonJson from './json/moon.json';
 import SunJson from './json/sun.json';
 
+import ResumeRu from './documents/resume-ru.pdf';
+import ResumeEn from './documents/resume-en.pdf';
+
 export {
   TelegramIcon,
   GithubIcon,
@@ -45,5 +48,7 @@ export {
   AmdbPreviewImg,
   AvatarJson,
   MoonJson,
-  SunJson
+  SunJson,
+  ResumeRu,
+  ResumeEn
 };

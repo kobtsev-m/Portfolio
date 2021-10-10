@@ -1,7 +1,7 @@
 import { Dispatch, FC, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import { BarsIcon, WorldIcon } from '~/assets';
+import { BarsIcon, WorldIcon, ResumeRu, ResumeEn } from '~/assets';
 import { Theme } from '~/types';
 import {
   Box,
@@ -25,8 +25,13 @@ export const Nav: FC<NavProps> = (props) => {
   const { navCollapse, setNavCollapse, ...restProps } = props;
   const { t, i18n } = useTranslation();
 
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
+  const toggleLanguage = async () => {
+    await i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
+  };
+
+  const openResume = () => {
+    const resumeUrl = i18n.language === 'en' ? ResumeEn : ResumeRu;
+    window.open(resumeUrl, '_blank');
   };
 
   return (
@@ -64,7 +69,7 @@ export const Nav: FC<NavProps> = (props) => {
             </Link>
           </NavItem>
           <NavItem>
-            <CustomButton>{t('nav.resume')}</CustomButton>
+            <CustomButton onClick={openResume}>{t('nav.resume')}</CustomButton>
           </NavItem>
         </Wrapper>
       </Column>

@@ -1,2 +1,2 @@
-export * from './common/FlexTypes';
-export * from './common/StyledTypes';
+export * from './media/media.types';
+export * from './theme/theme.types';

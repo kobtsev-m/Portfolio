@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
-import { media } from '~/styles';
+import { mediaStyles } from '~/styles';
 
 export const mobileThinBorderCss = css`
   border: 1px solid ${({ theme }) => theme.color.thin};
   border-radius: 10px;
   padding: 0.4rem;
-  ${media(
+  ${mediaStyles(
     'md',
     css`
       text-align: left;

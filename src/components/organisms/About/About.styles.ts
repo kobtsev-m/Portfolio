@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media, mobileThinBorderCss } from '~/styles';
+import { mediaStyles, mobileThinBorderCss } from '~/styles';
 import { CaretDarkIcon, CaretLightIcon } from '~/assets';
 
 export const AboutText = styled.p`
@@ -9,7 +9,7 @@ export const AboutText = styled.p`
   font-size: 0.28rem;
   line-height: 0.44rem;
   letter-spacing: 0.02em;
-  ${media('md', 'width: 80%')};
+  ${mediaStyles('md', 'width: 80%')};
   ${mobileThinBorderCss}
 `;
 

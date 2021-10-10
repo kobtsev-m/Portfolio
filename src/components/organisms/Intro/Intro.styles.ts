@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { media, mobileThinBorderCss } from '~/styles';
+import { mediaStyles, mobileThinBorderCss } from '~/styles';
 import { rgba } from 'polished';
 
 export const IntroWrapper = styled.section`
   height: auto;
-  ${media('lg', 'height: calc(100vh - 140px - 0.2rem)')};
+  ${mediaStyles('lg', 'height: calc(100vh - 140px - 0.2rem)')};
 `;
 
 export const IntroTextBlock = styled.div`
   width: 100%;
-  ${media('md', 'width: 80%')};
+  ${mediaStyles('md', 'width: 80%')};
   ${mobileThinBorderCss};
 `;
 
@@ -52,7 +52,7 @@ export const AvatarSvg = styled.svg`
   height: 400px;
   border-radius: 10px;
   mask-size: contain;
-  ${media('lg', 'height: 550px')}
+  ${mediaStyles('lg', 'height: 550px')}
 `;
 
 export const AvatarJpg = styled.div<{ src: string }>`
@@ -62,5 +62,5 @@ export const AvatarJpg = styled.div<{ src: string }>`
   border-radius: 10px;
   background: ${({ src }) => `url(${src})`} center no-repeat;
   background-size: cover;
-  ${media('lg', 'height: 550px')};
+  ${mediaStyles('lg', 'height: 550px')};
 `;

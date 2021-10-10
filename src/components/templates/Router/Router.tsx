@@ -1,11 +1,13 @@
 import { FC } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from '~/components/pages';
+import { routes } from '~/routes';
 
 export const Router: FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path='/' render={() => <Home />} />
+      {routes.map((route, i) => (
+        <Route key={i} exact {...route} />
+      ))}
     </Switch>
   </BrowserRouter>
 );

@@ -24,16 +24,18 @@ export const DemoCard: FC<DemoCardProps> = (props) => {
   return (
     <Wrapper p='0.4rem'>
       <IconsHeader>
-        <Box position='absolute' top='0' right='50px'>
+        <Box position='absolute' top='0' right={demoLink ? '50px' : '0'}>
           <a href={githubLink} target='_blank' rel='noreferrer'>
             <CustomIcon src={GithubLinkIcon} width='44px' height='44px' />
           </a>
         </Box>
-        <Box position='absolute' top='0' right='0'>
-          <a href={demoLink} target='_blank' rel='noreferrer'>
-            <CustomIcon src={WebsiteLinkIcon} width='40px' height='40px' />
-          </a>
-        </Box>
+        {demoLink && (
+          <Box position='absolute' top='0' right='0'>
+            <a href={demoLink} target='_blank' rel='noreferrer'>
+              <CustomIcon src={WebsiteLinkIcon} width='40px' height='40px' />
+            </a>
+          </Box>
+        )}
       </IconsHeader>
       <CardTitle>{projectName}</CardTitle>
       <CardDescription>{description}</CardDescription>

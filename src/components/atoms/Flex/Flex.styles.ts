@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media, mediaProperty } from '~/styles';
+import { mediaStyles, mediaProperty } from '~/styles';
 import { Breakpoint, Ruleset } from '~/types';
 import { Box } from './Box.styles';
 
@@ -9,11 +9,11 @@ export const Container = styled(Box)`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  ${media('sm', 'max-width: 540px')};
-  ${media('md', 'max-width: 720px')};
-  ${media('lg', 'max-width: 960px')};
-  ${media('xl', 'max-width: 1140px')};
-  ${media('xxl', 'max-width: 1320px')}
+  ${mediaStyles('sm', 'max-width: 540px')};
+  ${mediaStyles('md', 'max-width: 720px')};
+  ${mediaStyles('lg', 'max-width: 960px')};
+  ${mediaStyles('xl', 'max-width: 1140px')};
+  ${mediaStyles('xxl', 'max-width: 1320px')}
 `;
 
 interface RowProps {
@@ -68,11 +68,11 @@ export const Column = styled(Box)<ColumnProps>`
   flex: 0 0 auto;
   width: 100%;
 
-  ${({ xs, gutter }) => xs && media('xs', `${getColStyle(xs, gutter)}`)}
-  ${({ sm, gutter }) => sm && media('sm', `${getColStyle(sm, gutter)}`)}
-  ${({ md, gutter }) => md && media('md', `${getColStyle(md, gutter)}`)}
-  ${({ lg, gutter }) => lg && media('lg', `${getColStyle(lg, gutter)}`)}
-  ${({ xl, gutter }) => xl && media('xl', `${getColStyle(xl, gutter)}`)}
+  ${({ xs, gutter }) => xs && mediaStyles('xs', `${getColStyle(xs, gutter)}`)}
+  ${({ sm, gutter }) => sm && mediaStyles('sm', `${getColStyle(sm, gutter)}`)}
+  ${({ md, gutter }) => md && mediaStyles('md', `${getColStyle(md, gutter)}`)}
+  ${({ lg, gutter }) => lg && mediaStyles('lg', `${getColStyle(lg, gutter)}`)}
+  ${({ xl, gutter }) => xl && mediaStyles('xl', `${getColStyle(xl, gutter)}`)}
   
   &:first-of-type {
     margin-left: 0;

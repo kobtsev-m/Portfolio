@@ -17,7 +17,7 @@ export const breakpoints = Object.entries(breakpointsSizes).reduce(
   {} as { [k in keyof typeof breakpointsSizes]: string }
 );
 
-export const media = (
+export const mediaStyles = (
   key: Breakpoint,
   value: string | FlattenSimpleInterpolation
 ) => {

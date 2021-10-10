@@ -1,6 +1,6 @@
 import { FC, ReactNode, useState, useEffect, Suspense } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, GlobalStyle, lightTheme } from '~/styles';
+import { darkTheme, GlobalStyles, lightTheme } from '~/styles';
 import { Theme } from '~/types';
 import { SideNav, Header } from '~/components/templates';
 import '~/locales/i18n';
@@ -28,7 +28,7 @@ export const Layout: FC<LayoutProps> = (props) => {
   return (
     <Suspense fallback='Loading...'>
       <ThemeProvider theme={theme === Theme.Dark ? darkTheme : lightTheme}>
-        <GlobalStyle />
+        <GlobalStyles />
         <SideNav />
         <Header theme={theme} toggleTheme={toggleTheme} />
         <main>{children}</main>

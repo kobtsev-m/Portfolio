@@ -13,7 +13,6 @@ import {
 } from './CommercialCard.styles';
 
 interface CommercialCardProps {
-  cardId: number;
   companyName?: string;
   companyIcon?: string;
   position?: string;
@@ -21,6 +20,7 @@ interface CommercialCardProps {
   technologies?: string[];
   previewImg?: string;
   siteLink: string;
+  githubLink: string;
 }
 
 export const CommercialCard: FC<CommercialCardProps> = (props) => {
@@ -31,7 +31,8 @@ export const CommercialCard: FC<CommercialCardProps> = (props) => {
     description,
     technologies,
     previewImg,
-    siteLink
+    siteLink,
+    githubLink
   } = props;
 
   const { t } = useTranslation();
@@ -63,10 +64,24 @@ export const CommercialCard: FC<CommercialCardProps> = (props) => {
         >
           <PreviewImage src={previewImg} />
           <Box position='absolute' top='0' left='0' width={100} height={100}>
-            <OverflowLink href={siteLink} target='_blank' rel='noreferrer'>
+            <OverflowLink
+              y={githubLink ? '- 0.5rem' : '- 0rem'}
+              href={siteLink}
+              target='_blank'
+              rel='noreferrer'
+            >
               {t('projects.webSite')}
             </OverflowLink>
-            <OverflowLink href='/'>{t('projects.readMore')}</OverflowLink>
+            {githubLink && (
+              <OverflowLink
+                y='+ 0.5rem'
+                href={githubLink}
+                target='_blank'
+                rel='noreferrer'
+              >
+                GitHub
+              </OverflowLink>
+            )}
           </Box>
         </Column>
       </Row>
