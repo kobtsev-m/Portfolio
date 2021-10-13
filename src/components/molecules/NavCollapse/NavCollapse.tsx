@@ -2,6 +2,7 @@ import { Dispatch, FC, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { animated, config, useSpring } from 'react-spring';
+import { ResumeRu, ResumeEn } from '~/assets';
 import { Box, CustomButton } from '~/components/atoms';
 import { Wrapper, NavItem } from './NavCollapse.styles';
 
@@ -22,11 +23,8 @@ export const NavCollapse: FC<NavCollapseProps> = (props) => {
   });
 
   const openResume = () => {
-    console.log('bbro');
-    const win = window.open(`/documents/resume-${i18n.language}`, '_blank');
-    if (win != null) {
-      win.focus();
-    }
+    const resumeUrl = i18n.language === 'en' ? ResumeEn : ResumeRu;
+    window.open(resumeUrl, '_blank');
   };
 
   return (
