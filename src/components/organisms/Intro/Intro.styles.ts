@@ -9,7 +9,7 @@ export const IntroWrapper = styled.section`
 
 export const IntroTextBlock = styled.div`
   width: 100%;
-  ${mediaStyles('md', 'width: 80%')};
+  ${mediaStyles('md', 'width: 75%')};
   ${mobileThinBorderCss};
 `;
 
@@ -17,7 +17,7 @@ export const IntroAvatarBlock = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   ${mobileThinBorderCss};
 `;
 
@@ -52,7 +52,7 @@ export const AvatarSvg = styled.svg`
   height: 400px;
   border-radius: 10px;
   mask-size: contain;
-  ${mediaStyles('lg', 'height: 550px')}
+  ${mediaStyles('lg', 'height: min(550px, 65vh)')}
 `;
 
 export const AvatarJpg = styled.div<{ src: string }>`
@@ -62,5 +62,5 @@ export const AvatarJpg = styled.div<{ src: string }>`
   border-radius: 10px;
   background: ${({ src }) => `url(${src})`} center no-repeat;
   background-size: cover;
-  ${mediaStyles('lg', 'height: 550px')};
+  ${mediaStyles('lg', 'height: min(550px, 65vh)')};
 `;

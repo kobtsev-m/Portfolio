@@ -16,12 +16,12 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
   :root {
-    ${mediaStyles('xs', 'font-size: 65px')};
-    ${mediaStyles('sm', 'font-size: 70px')};
-    ${mediaStyles('md', 'font-size: 75px')};
-    ${mediaStyles('lg', 'font-size: 80px')};
-    ${mediaStyles('xl', 'font-size: 85px')};
-    ${mediaStyles('xxl', 'font-size: 90px')};
+    ${mediaStyles('xs', 'font-size: 55px')};
+    ${mediaStyles('sm', 'font-size: 60px')};
+    ${mediaStyles('md', 'font-size: 65px')};
+    ${mediaStyles('lg', 'font-size: 70px')};
+    ${mediaStyles('xl', 'font-size: 75px')};
+    ${mediaStyles('xxl', 'font-size: 80px')};
   }
   hr {
       border: none;

@@ -8,7 +8,6 @@ import { Box, BorderButton } from '~/components/atoms';
 import { AvatarSvg, AvatarJpg } from './Intro.styles';
 
 enum AnimationStatus {
-  Animation1,
   Animation2,
   Stopped
 }
@@ -17,24 +16,24 @@ const AnimatedAvatarJpg = animated(AvatarJpg);
 
 export const IntroAvatar = memo(() => {
   const [status, setStatus] = useState<AnimationStatus>(
-    AnimationStatus.Animation1
+    AnimationStatus.Stopped
   );
   const { t } = useTranslation();
 
-  const effects1 = useSprings(
-    avatar.length,
-    avatar.map((_, i) => ({
-      from: { transform: 'translateX(-800px)' },
-      to: { transform: 'translateX(0)' },
-      delay: 600 + i * 4,
-      config: config.gentle,
-      onRest: () => {
-        if (i === avatar.length - 1) {
-          setStatus(AnimationStatus.Stopped);
-        }
-      }
-    }))
-  );
+  // const effects1 = useSprings(
+  //   avatar.length,
+  //   avatar.map((_, i) => ({
+  //     from: { transform: 'translateX(-800px)' },
+  //     to: { transform: 'translateX(0)' },
+  //     delay: 600 + i * 4,
+  //     config: config.gentle,
+  //     onRest: () => {
+  //       if (i === avatar.length - 1) {
+  //         setStatus(AnimationStatus.Stopped);
+  //       }
+  //     }
+  //   }))
+  // );
 
   const effects2 = useSprings(
     avatar.length,
@@ -75,7 +74,7 @@ export const IntroAvatar = memo(() => {
           height='960'
           fill={darkTheme.color.background}
         />
-        {(status === AnimationStatus.Animation1 ? effects1 : effects2).map(
+        {effects2.map(
           (effect, i) => (
             <animated.path key={i} style={effect} {...avatar[i]} />
           )
