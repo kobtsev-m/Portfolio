@@ -9,7 +9,8 @@ export const IntroWrapper = styled.section`
 
 export const IntroTextBlock = styled.div`
   width: 100%;
-  ${mediaStyles('md', 'width: 75%')};
+  ${mediaStyles('lg', 'width: 90%')};
+  ${mediaStyles('xl', 'width: 75%')};
   ${mobileThinBorderCss};
 `;
 
@@ -17,7 +18,8 @@ export const IntroAvatarBlock = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  ${mediaStyles('lg', 'justify-content: flex-end;')};
   ${mobileThinBorderCss};
 `;
 
