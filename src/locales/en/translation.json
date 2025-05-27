@@ -5,62 +5,57 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
-    "resume": "Resume"
+    "resume": "CV"
   },
   "intro": {
-    "title": "Mikhail Kobtsev",
-    "subtitle": "React Front-end developer in search of interesting projects and proposals",
-    "description": "I specialize on creating user interfaces & developing rich web applications. I have experience working with big international company & creating many demo projects in this area.",
+    "title": "Michael Kobtsev",
+    "subtitle": "Team Lead Full-Stack Developer",
+    "description": "I specialize in creating of Web applications with AI Back-Ends that are hosted and scaled using modern cloud providers and latest stack of technologies.",
     "animate": "Animate"
   },
   "about": {
-    "text": "Hello, my name is Michael, I’m <0>20 years</0> old <0>Computer science student in NSU</0> who is interested in creating web applications.<1></1><1></1>I have about <0>2 years experience</0> in which I managed to work on <0>2 commercial projects</0> and over 10 demo projects.<1></1><1></1>At first I was practicing as a <0> Python Full-stack developer </0> and now decided to choose a narrower focus.<1></1><1></1><0>Main technologies</0> I’ve been working with are shown on the right.",
-    "technologies": "Technologies"
+    "text": "Hello, my name is Michael, I’m <0>24 years old Full-Stack Developer with 6+ years of commercial experience.</0><1></1><1></1>I specialize in creating of <0>Web applications with AI Back-Ends</0> that are hosted and scaled using modern cloud providers and latest stack of technologies.<1></1><1></1>My goal is to become System Architect one day, now I'm <0>looking for new experience and interesting projects</0> to reach this target, hope we will have an opportunity to work together in future.",
+    "technologies": "Skills"
   },
   "projects": {
-    "webSite": "Web Site",
+    "webSite": "Official Web Site",
+    "openSourceRepository": "Open Source Repository",
     "readMore": "Read More",
-    "otherProjects": "Other projects",
+    "otherProjects": "Pet projects",
     "commercial": "Commercial",
-    "demo": "Demo",
+    "demo": "Personal",
     "showMore": "Show more",
     "hide": "Hide",
+    "bf": {
+      "companyName": "Bushfire AI",
+      "position": "React, Python Full-Stack developer<0></0>Team Lead",
+      "description": "AI-based fire detection system that works with live 360 degrees cameras. Web contains view for each active camera, detection list and large admin panel for elastic configuration of each camera unit."
+    },
+    "wo": {
+      "companyName": "Workpack AI",
+      "position": "Angular Front-End developer<0></0>Team Lead",
+      "description": "AI web tool for architects to perform takeoffs much faster. The project can be described as AutoCAD in browser with automatic AI detection of measures and different abilities for summaries/exports across document."
+    },
+    "fs": {
+      "companyName": "FirstStep AI",
+      "position": "React, Node Full-Stack developer",
+      "description": "No code platform for training of AI models. Web system allows user to upload dataset, choose base model, set augmentation list and other additional configuration. After training each model can be tested\nand downloaded as an Android application or as a RAW file."
+    },
     "ic": {
       "companyName": "Integral Commodities",
-      "position": "Front-end developer",
-      "description": "Commercial web site for one of the largest exporters company of Polymers, Fertilisers & Sulphur"
+      "position": "React Front-End developer",
+      "description": "Commercial web site for one of the largest exporters company of Polymers, Fertilisers & Sulphur."
     },
     "amdb": {
       "companyName": "AMDB",
-      "position": "Full-stack developer",
-      "description": "Site for Institute of Biology for storage, editing, searching and analysis researches and experiments"
+      "position": "Python Full-Stack developer",
+      "description": "Site for Institute of Biology for storage, editing, searching and analysis researches and experiments."
     },
     "portfolio": {
-      "description": "Portfolio site you are currently on"
+      "description": "Portfolio site you are currently on."
     },
-    "cityBikes": {
-      "description": "Mobile app for finding places where people can rent a bicycle in their city"
-    },
-    "cocktailsMenu": {
-      "description": "Site to view cocktails menu based on public API"
-    },
-    "blogSite": {
-      "description": "Example of simple blog site with the division of posts into categories"
-    },
-    "polygonalAnimations": {
-      "description": "Generating animation of polygonal svg images with triangulation algorithm"
-    },
-    "animalShelter": {
-      "description": "Site of animal shelter with animals cards and search menu"
-    },
-    "djangoOAuth": {
-      "description": "Example of OAuth in Django with user profile and settings pages"
-    },
-    "carSearcher": {
-      "description": "Filter search example with cars models"
-    },
-    "waxom": {
-      "description": "Adaptive layout of landing page"
+    "hobbio": {
+      "description": "Social mobile app to find like-minded people, favorite places and events."
     }
   },
   "contact": {
@@ -76,3 +71,4 @@
     "format": "Invalid format"
   }
 }
+

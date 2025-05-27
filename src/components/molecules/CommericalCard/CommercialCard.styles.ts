@@ -47,7 +47,8 @@ export const CardDescription = styled.p`
 
 export const PreviewImage = styled.div<{ src?: string }>`
   width: 100%;
-  height: 4rem;
+  height: 100%;
+  min-height: 5rem;
   background-image: ${({ src }) => `url(${src})`};
   background-color: #fff;
   background-position: center;
@@ -64,7 +65,7 @@ export const OverflowLink = styled.a<{ y: string }>`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2.5rem;
+  width: 3.2rem;
   color: #fff;
   font-family: ${({ theme }) => theme.font.openSans};
   font-weight: 400;
@@ -75,12 +76,7 @@ export const OverflowLink = styled.a<{ y: string }>`
   padding: 0.25rem;
   opacity: 0;
   transition: opacity ease-in-out 0.2s;
-  &:nth-child(2n + 1) {
-    transform: translate(-50%, calc(-50% ${({ y }) => y}));
-  }
-  &:nth-child(2n) {
-    transform: translate(-50%, calc(-50% ${({ y }) => y}));
-  }
+  transform: translate(-50%, calc(-50% ${({ y }) => y}));
 `;
 
 export const TechnologiesList = styled.ul`
@@ -93,6 +89,7 @@ export const TechnologiesList = styled.ul`
 export const TechnologiesListItem = styled.li`
   color: ${({ theme }) => rgba(theme.color.accent, 0.8)};
   margin: 0 0 0.2rem 0;
+  white-space: nowrap;
   ${mediaStyles('lg', 'margin: 0 0.2rem 0 0')}
 `;
 

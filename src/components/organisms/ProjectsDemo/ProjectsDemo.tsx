@@ -37,13 +37,13 @@ export const ProjectsDemo: FC = () => {
           </Column>
         ))}
       </Row>
-      <Row justify='center'>
-        <Column md={12} xl={8} gutter='0.3rem'>
-          <CustomButton width={100} color='accent' onClick={toggleEnrolled}>
-            {isEnrolled ? t('projects.hide') : t('projects.showMore')}
-          </CustomButton>
-        </Column>
-      </Row>
+      {/*<Row justify='center'>*/}
+      {/*  <Column md={12} xl={8} gutter='0.3rem'>*/}
+      {/*    <CustomButton width={100} color='accent' onClick={toggleEnrolled}>*/}
+      {/*      {isEnrolled ? t('projects.hide') : t('projects.showMore')}*/}
+      {/*    </CustomButton>*/}
+      {/*  </Column>*/}
+      {/*</Row>*/}
     </>
   );
 };

@@ -20,7 +20,7 @@ export const About: FC = () => {
   const { t } = useTranslation();
   return (
     <Element name='about'>
-      <Container mt='0.5rem'>
+      <Container mt='0.5rem' mb={{ md: '0', lg: '1.5rem' }}>
         <BlockHeader title={t('nav.about')} orient='left' />
         <Row mt={{ xs: '0.2rem', lg: '0.5rem' }}>
           <Column lg={16}>

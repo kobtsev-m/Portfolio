@@ -45,7 +45,7 @@ export const IntroAvatar = memo(() => {
               await next({ fill: avatar[i].fill });
             }
           : { fill: avatar[i].fill },
-      delay: 300 + i * 4,
+      delay: 300 + i * 3.5,
       config: { ...config.gentle, duration: 1500 },
       onRest: () => {
         if (i === avatar.length - 1) {
@@ -66,19 +66,18 @@ export const IntroAvatar = memo(() => {
 
   return (
     <Box position='relative'>
-      <AvatarSvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 718 960'>
+      {/* 718 960 */}
+      <AvatarSvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 718 1122'>
         <rect
           x='0'
           y='0'
           width='718'
-          height='960'
+          height='1122'
           fill={darkTheme.color.background}
         />
-        {effects2.map(
-          (effect, i) => (
-            <animated.path key={i} style={effect} {...avatar[i]} />
-          )
-        )}
+        {effects2.map((effect, i) => (
+          <animated.path key={i} style={effect} {...avatar[i]} />
+        ))}
       </AvatarSvg>
       <Box position='absolute' top='0' left='0' width={100}>
         <AnimatedAvatarJpg src={AvatarJpgImg} style={effects3} />

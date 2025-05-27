@@ -62,7 +62,7 @@ export const Projects: FC = () => {
 
   return (
     <Element name='projects'>
-      <Container ref={containerRef} mt='0.5rem'>
+      <Container ref={containerRef} mt='0.5rem' mb={{ md: '0', lg: '1.5rem' }}>
         <BlockHeader title={t('nav.projects')} orient='right' />
         <div ref={commercialRef}>
           <ProjectsCommercial />

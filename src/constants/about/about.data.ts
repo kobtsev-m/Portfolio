@@ -1,12 +1,11 @@
 export const aboutData = {
   technologies: [
-    { name: 'JavaScript (ES6)', importance: 1 },
-    { name: 'Typescript', importance: 1 },
-    { name: 'Css / Scss', importance: 1 },
-    { name: 'React', importance: 1 },
-    { name: 'Redux', importance: 1 },
-    { name: 'Git', importance: 1 },
-    { name: 'Python 3', importance: 0.4 },
-    { name: 'Django', importance: 0.4 }
+    { name: 'TypeScript (React / Angular)', importance: 1 },
+    { name: 'Node (Nest / Express)', importance: 1 },
+    { name: 'Python (Fast API / Flask / Django)', importance: 1 },
+    { name: 'Git (GitHub / GitLab / BitBucket) ', importance: 1 },
+    { name: 'DevOps (Docker / Nginx / CI & CD) ', importance: 1 },
+    { name: 'Cloud (AWS / Azure) ', importance: 1 },
+    { name: 'Team Management', importance: 1 }
   ]
 };

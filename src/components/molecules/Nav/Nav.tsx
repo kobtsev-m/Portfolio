@@ -75,7 +75,7 @@ export const Nav: FC<NavProps> = (props) => {
       </Column>
       <Column xs={12} sm={4} xl={14} flex justify='end' showAt='xl'>
         <ClearButton onClick={() => setNavCollapse(!navCollapse)}>
-          <CustomIcon src={BarsIcon} width='50px' height='50px' />
+          <CustomIcon src={BarsIcon} width='45px' height='45px' />
         </ClearButton>
       </Column>
     </Row>

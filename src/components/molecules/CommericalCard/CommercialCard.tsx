@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Box, Row, Column } from '~/components/atoms';
 import {
@@ -15,7 +15,7 @@ import {
 interface CommercialCardProps {
   companyName?: string;
   companyIcon?: string;
-  position?: string;
+  position?: React.ReactNode;
   description?: string;
   technologies?: string[];
   previewImg?: string;
@@ -63,23 +63,25 @@ export const CommercialCard: FC<CommercialCardProps> = (props) => {
           pt={{ xs: '0.25rem', lg: '0' }}
         >
           <PreviewImage src={previewImg} />
-          <Box position='absolute' top='0' left='0' width={100} height={100}>
-            <OverflowLink
-              y={githubLink ? '- 0.5rem' : '- 0rem'}
-              href={siteLink}
-              target='_blank'
-              rel='noreferrer'
-            >
-              {t('projects.webSite')}
-            </OverflowLink>
+          <Box position='absolute' top='0' left='0' width={105} height={100}>
+            {siteLink && (
+              <OverflowLink
+                y={githubLink ? '- 0.5rem' : '- 0rem'}
+                href={siteLink}
+                target='_blank'
+                rel='noreferrer'
+              >
+                {t('projects.webSite')}
+              </OverflowLink>
+            )}
             {githubLink && (
               <OverflowLink
-                y='+ 0.5rem'
+                y={siteLink ? '+ 0.5rem' : '+ 0rem'}
                 href={githubLink}
                 target='_blank'
                 rel='noreferrer'
               >
-                GitHub
+                {t('projects.openSourceRepository')}
               </OverflowLink>
             )}
           </Box>
