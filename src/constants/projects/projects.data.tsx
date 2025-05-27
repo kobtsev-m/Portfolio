@@ -65,8 +65,8 @@ export const projectsData = {
       description: t('projects.ic.description'),
       technologies: ['Next', 'Google Maps', 'Docker', 'Nginx'],
       previewImg: IntegralPreviewImg,
-      siteLink: '',
-      githubLink: 'https://github.com/kobtsev-m/Integral-Commodities/'
+      siteLink: 'https://integral-group.org/digital-projects',
+      githubLink: ''
     },
     {
       companyName: t('projects.amdb.companyName'),
@@ -94,7 +94,7 @@ export const projectsData = {
       description: t('projects.portfolio.description'),
       technologies: ['React', 'Spring Animations'],
       demoLink: '',
-      githubLink: 'https://github.com/kobtsev-m/Portfolio/'
+      githubLink: 'https://github.com/kobtsev-m/Portfolio'
     },
     {
       projectName: 'Hobbio',
