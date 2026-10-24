@@ -6,9 +6,11 @@ import {
   CardDescription,
   CardTitle,
   IconsHeader,
+  SiteIcon,
   Wrapper
 } from './DemoCard.styles';
-import { GithubLinkIcon, WebsiteLinkIcon } from '~/assets';
+import { GithubLinkIcon } from '~/assets';
+import { useSitePreview } from '~/components/templates';
 
 interface DemoCardProps {
   projectName: string;
@@ -16,25 +18,37 @@ interface DemoCardProps {
   technologies: string[];
   githubLink: string;
   demoLink: string;
+  icon?: string;
 }
 
 export const DemoCard: FC<DemoCardProps> = (props) => {
-  const { projectName, description, technologies, githubLink, demoLink } =
-    props;
+  const {
+    projectName,
+    description,
+    technologies,
+    githubLink,
+    demoLink,
+    icon
+  } = props;
+  const previewLink = useSitePreview();
+  // With a site link the whole card is the link (it opens the preview popup).
+  const linkProps = demoLink
+    ? {
+        as: 'a' as const,
+        href: demoLink,
+        target: '_blank',
+        rel: 'noreferrer',
+        onClick: previewLink(demoLink, projectName)
+      }
+    : {};
   return (
-    <Wrapper p='0.4rem'>
+    <Wrapper p='0.4rem' {...linkProps}>
       <IconsHeader>
-        {githubLink && (
-          <Box position='absolute' top='0' right={demoLink ? '50px' : '0'}>
+        {icon && <SiteIcon src={icon} alt='' />}
+        {githubLink && !demoLink && (
+          <Box position='absolute' top='0' right={icon ? '50px' : '0'}>
             <a href={githubLink} target='_blank' rel='noreferrer'>
               <CustomIcon src={GithubLinkIcon} width='44px' height='44px' />
-            </a>
-          </Box>
-        )}
-        {demoLink && (
-          <Box position='absolute' top='0' right='0'>
-            <a href={demoLink} target='_blank' rel='noreferrer'>
-              <CustomIcon src={WebsiteLinkIcon} width='35px' height='35px' />
             </a>
           </Box>
         )}

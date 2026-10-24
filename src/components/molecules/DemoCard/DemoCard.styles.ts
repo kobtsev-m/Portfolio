@@ -4,10 +4,28 @@ import { mediaStyles } from '~/styles';
 import { Box } from '~/components/atoms';
 
 export const Wrapper = styled(Box)`
+  display: block;
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.color.layout};
+  border: 1px solid transparent;
   border-radius: 10px;
+  text-decoration: none;
+  transition: border-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+  &[href]:hover {
+    border-color: ${({ theme }) => rgba(theme.color.accent, 0.6)};
+    transform: translateY(-2px);
+  }
+`;
+
+export const SiteIcon = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 22%;
 `;
 
 export const IconsHeader = styled.div`

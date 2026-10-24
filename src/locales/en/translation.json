@@ -9,53 +9,76 @@
   },
   "intro": {
     "title": "Michael Kobtsev",
-    "subtitle": "Team Lead Full-Stack Developer",
-    "description": "I specialize in creating of Web applications with AI Back-Ends that are hosted and scaled using modern cloud providers and latest stack of technologies.",
+    "subtitle": "Senior Full-Stack Engineer · Tech Lead",
+    "description": "I build AI-powered products end to end: web, mobile, backend, cloud and payments. Python, TypeScript, React, Node.js, LLM agents and tools.",
     "animate": "Animate"
   },
   "about": {
-    "text": "Hello, my name is Michael, I’m <0>24 years old Full-Stack Developer with 6+ years of commercial experience.</0><1></1><1></1>I specialize in creating of <0>Web applications with AI Back-Ends</0> that are hosted and scaled using modern cloud providers and latest stack of technologies.<1></1><1></1>My goal is to become System Architect one day, now I'm <0>looking for new experience and interesting projects</0> to reach this target, hope we will have an opportunity to work together in future.",
+    "text": "Hi, I'm Michael — a <0>Full-Stack Engineer with 7+ years of commercial experience</0>, including Team Lead and Tech Lead roles.<1></1><1></1>Since 2021 I've worked at <0>Businessware Technologies</0>, an AI software development company, on long-term client projects. I build <0>products with AI inside</0>: LLM agents and tools (OpenAI Agents SDK, MCP, RAG), AI cost control, document and video AI pipelines — and take them from architecture to production, including mobile releases, infrastructure and payments.<1></1><1></1>I spend part of the year in Russia and part in Thailand (UTC+3…+7) and work remotely with international teams. <0>Open to Senior / Tech Lead roles and contract projects.</0>",
     "technologies": "Skills"
   },
   "projects": {
     "webSite": "Official Web Site",
     "openSourceRepository": "Open Source Repository",
     "readMore": "Read More",
-    "otherProjects": "Pet projects",
+    "otherProjects": "Own projects",
     "commercial": "Commercial",
-    "demo": "Personal",
+    "demo": "Own",
     "showMore": "Show more",
     "hide": "Hide",
     "bf": {
       "companyName": "Bushfire AI",
-      "position": "React, Python Full-Stack developer<0></0>Team Lead",
-      "description": "AI-based fire detection system that works with live 360 degrees cameras. Web contains view for each active camera, detection list and large admin panel for elastic configuration of each camera unit."
+      "position": "React, Python Full-Stack<0></0>Team Lead / Tech Lead",
+      "description": "AI wildfire detection on live 360° cameras in California and Australia, with alerts to emergency services. I led the team (hiring, onboarding, planning, client communication) and was the main contributor to the web app: camera views, detections and a large admin panel on React + GraphQL (AWS AppSync), plus the serverless AWS backend."
     },
     "wo": {
-      "companyName": "Workpack AI",
-      "position": "Angular Front-End developer<0></0>Team Lead",
-      "description": "AI web tool for architects to perform takeoffs much faster. The project can be described as AutoCAD in browser with automatic AI detection of measures and different abilities for summaries/exports across document."
+      "companyName": "Destini Takeoff",
+      "position": "Angular Front-End<0></0>Team Lead",
+      "description": "Construction takeoff tool — \"AutoCAD in the browser\" with AI detection of walls, doors, windows and rooms. I led the front-end team from the start: geometry editor, PDF workflows, a YOLO model running in the browser on ONNX Runtime Web, performance tuning for heavy drawings."
     },
     "fs": {
       "companyName": "FirstStep AI",
-      "position": "React, Node Full-Stack developer",
-      "description": "No code platform for training of AI models. Web system allows user to upload dataset, choose base model, set augmentation list and other additional configuration. After training each model can be tested\nand downloaded as an Android application or as a RAW file."
+      "position": "React, Node.js Full-Stack developer",
+      "description": "No-code platform for training computer-vision models (classification, detection, segmentation) and exporting them as Android apps. I built core pages, dataset upload and training flows, the annotation canvas, authentication and subscriptions."
     },
     "ic": {
       "companyName": "Integral Commodities SA",
       "position": "React Front-End developer",
-      "description": "Commercial web site for one of the largest exporters company of Polymers, Fertilisers & Sulphur."
+      "description": "Commercial website for an exporter of polymers, fertilizers and sulphur: product and price search, maps, adaptive layout."
     },
     "amdb": {
       "companyName": "AMDB",
       "position": "Python Full-Stack developer",
-      "description": "Site for Institute of Biology for storage, editing, searching and analysis researches and experiments."
-    },
-    "portfolio": {
-      "description": "Portfolio site you are currently on."
+      "description": "Service for the Institute of Cytology and Genetics to store, search and analyse research and experiments."
     },
     "hobbio": {
-      "description": "Social mobile app to find like-minded people, favorite places and events."
+      "description": "My own small startup: hobby, event and place discovery app for iOS, Android and web. I build it end to end — Expo app with 110+ store releases, NestJS backend with queues, YooKassa subscriptions, Kubernetes."
+    },
+    "present": "present",
+    "inqi": {
+      "companyName": "InQI",
+      "position": "Senior Full-Stack Engineer",
+      "description": "AEC/GIS platform for site planning: ArcGIS-based web editor, iOS/Android app, geometry and export services and an AI assistant. I designed the AI spend-control system, worked on the assistant (OpenAI Agents SDK, MCP tools on AWS Lambda, SSE), built Stripe subscriptions with AI credits and shipped 60+ mobile releases."
+    },
+    "aid": {
+      "companyName": "AI Diagnostics",
+      "position": "Node.js, AWS<0></0>Tech Lead",
+      "description": "AI analysis of digital stethoscope recordings. Desktop app with device connection, cloud sync and auto-update. I built the AWS infrastructure and the Node.js backend for storing and syncing device data, with a firmware / app version registry."
+    },
+    "reelabs": {
+      "description": "My own small startup: Telegram-first service for AI video reels — LLM scripts, HeyGen avatars, ElevenLabs voice, Remotion rendering on AWS Lambda, YooKassa billing."
+    },
+    "clientProject": "client project",
+    "bw": {
+      "position": "Senior Full-Stack Engineer · Team Lead / Tech Lead",
+      "description": "AI software development company (since 2003) building AI agents, document AI and SaaS products for international clients. I work on long-term client projects, usually two in parallel — the main ones are below.",
+      "other": "Also AI projects for other clients: LLM extraction of purchase orders from email and PDF into ERP (Gemini, FastAPI, Azure), SKU matching with hybrid retrieval and ML ranking (Qdrant, LightGBM), speech-to-clips video pipeline (Whisper, GPT), multi-agent document review with RAG (LangGraph, pgvector)."
+    },
+    "caseStudy": "Read more on Businessware",
+    "news": {
+      "companyName": "ADS Newspapers",
+      "position": "Python, DevOps<0></0>Senior Engineer",
+      "description": "AI pipeline for European regional newspaper publishers that turns static PDF issues into interactive ones: a YOLO model finds ad blocks on each page, Gemini confirms the ad and extracts its URL, and validated links are inserted at the exact coordinates. I built the Python / FastAPI service and the event-driven cloud setup on GCP and S3."
     }
   },
   "contact": {
@@ -69,6 +92,10 @@
   "errors": {
     "required": "Required field",
     "format": "Invalid format"
+  },
+  "preview": {
+    "openInNewTab": "Open in new tab",
+    "close": "Close",
+    "loading": "Loading the site…"
   }
 }
-

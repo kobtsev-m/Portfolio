@@ -1,6 +1,7 @@
 import { Dispatch, FC, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import { useOpenPreview } from '~/components/templates';
 import { BarsIcon, WorldIcon, ResumeRu, ResumeEn } from '~/assets';
 import { Theme } from '~/types';
 import {
@@ -29,9 +30,16 @@ export const Nav: FC<NavProps> = (props) => {
     await i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
   };
 
+  const openPreview = useOpenPreview();
+
   const openResume = () => {
     const resumeUrl = i18n.language === 'en' ? ResumeEn : ResumeRu;
-    window.open(resumeUrl, '_blank');
+    // Phones render PDFs in a frame poorly, so they keep opening a new tab.
+    if (window.innerWidth < 768) {
+      window.open(resumeUrl, '_blank');
+      return;
+    }
+    openPreview({ url: resumeUrl, title: t('nav.resume') });
   };
 
   return (

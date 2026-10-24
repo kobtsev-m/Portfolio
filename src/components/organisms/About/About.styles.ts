@@ -13,6 +13,28 @@ export const AboutText = styled.p`
   ${mobileThinBorderCss}
 `;
 
+export const ProfileLinks = styled.div`
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.35rem;
+  a {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    opacity: 0.8;
+    transition: opacity ease-in-out 0.2s;
+  }
+  a:hover {
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    /* The brand icons are black; invert them on the dark theme. */
+    filter: ${({ theme }) => (theme.name === 'dark' ? 'invert(1)' : 'none')};
+  }
+`;
+
 export const TechnologiesBlock = styled.div`
   ${mobileThinBorderCss}
 `;

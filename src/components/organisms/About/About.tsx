@@ -3,11 +3,14 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Transition, animated, config } from 'react-spring';
-import { aboutData } from '~/constants';
+import { aboutData, SIDE_NAV_MIN_OFFSET } from '~/constants';
+import { useContainerOffset } from '~/hooks';
+import { GithubIcon, GitlabIcon } from '~/assets';
 import { Box, Container, Row, Column, CustomButton } from '~/components/atoms';
 import { BlockHeader } from '~/components/molecules';
 import {
   AboutText,
+  ProfileLinks,
   TechnologiesBlock,
   TechnologiesList,
   TechnologiesListItem
@@ -15,18 +18,42 @@ import {
 
 const AnimatedTechnologiesListItem = animated(TechnologiesListItem);
 
+const profileLinks = [
+  { label: 'GitHub', href: 'https://github.com/kobtsev-m', icon: GithubIcon },
+  { label: 'GitLab', href: 'https://gitlab.com/kobtsev-m', icon: GitlabIcon }
+];
+
 export const About: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
+  const { containerOffset, containerRef } = useContainerOffset();
+  // On wide screens the side rail already shows these links.
+  const showProfileLinks = containerOffset < SIDE_NAV_MIN_OFFSET;
   return (
     <Element name='about'>
-      <Container mt='0.5rem' mb={{ md: '0', lg: '1.5rem' }}>
+      <Container ref={containerRef} mt='0.5rem' mb={{ md: '0', lg: '1.5rem' }}>
         <BlockHeader title={t('nav.about')} orient='left' />
         <Row mt={{ xs: '0.2rem', lg: '0.5rem' }}>
           <Column lg={16}>
             <AboutText>
               <Trans i18nKey='about.text' components={[<b />, <br />]} />
             </AboutText>
+            {showProfileLinks && (
+              <ProfileLinks>
+                {profileLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label={link.label}
+                    title={link.label}
+                  >
+                    <img src={link.icon} alt={link.label} />
+                  </a>
+                ))}
+              </ProfileLinks>
+            )}
           </Column>
           <Column lg={8} mt={{ xs: '0.5rem', lg: '0' }}>
             <VisibilitySensor

@@ -50,7 +50,7 @@ export const lightTheme: DefaultTheme = {
   color: {
     font: '#1B1B1B',
     background: '#F4F4F4',
-    accent: '#687349',
+    accent: '#3E7F52',
     secondary: '#8D754F',
     layout: '#FFFFFF',
     grey: 'rgba(27, 27, 27, 0.2)',

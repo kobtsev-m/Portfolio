@@ -2,7 +2,7 @@ import { FC, ReactNode, useState, useEffect, Suspense } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '~/styles';
 import { Theme } from '~/types';
-import { SideNav, Header } from '~/components/templates';
+import { SideNav, Header, SitePreviewProvider } from '~/components/templates';
 import '~/locales/i18n';
 
 interface LayoutProps {
@@ -29,9 +29,11 @@ export const Layout: FC<LayoutProps> = (props) => {
     <Suspense fallback='Loading...'>
       <ThemeProvider theme={theme === Theme.Dark ? darkTheme : lightTheme}>
         <GlobalStyles />
-        <SideNav />
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <main>{children}</main>
+        <SitePreviewProvider>
+          <SideNav />
+          <Header theme={theme} toggleTheme={toggleTheme} />
+          <main>{children}</main>
+        </SitePreviewProvider>
       </ThemeProvider>
     </Suspense>
   );

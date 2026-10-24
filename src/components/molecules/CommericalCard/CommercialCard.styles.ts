@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 import { Box } from '~/components/atoms';
 import { mediaStyles } from '~/styles';
@@ -26,6 +26,18 @@ export const CardTitle = styled.h3<{ icon?: string }>`
   }
 `;
 
+export const CardEmployer = styled.a`
+  display: inline-block;
+  color: ${({ theme }) => rgba(theme.color.accent, 0.9)};
+  font-family: ${({ theme }) => theme.font.montserrat};
+  font-size: 0.24rem;
+  line-height: 0.36rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 0.15rem;
+`;
+
 export const CardSubTitle = styled.h4`
   color: ${({ theme }) => theme.color.font};
   font-family: ${({ theme }) => theme.font.openSans};
@@ -34,6 +46,16 @@ export const CardSubTitle = styled.h4`
   font-size: 0.35rem;
   line-height: 0.54rem;
   margin: 0.2rem 0;
+`;
+
+export const CardPeriod = styled.p`
+  color: ${({ theme }) => theme.color.font};
+  font-family: ${({ theme }) => theme.font.montserrat};
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+  margin: -0.1rem 0 0.2rem;
 `;
 
 export const CardDescription = styled.p`
@@ -65,7 +87,8 @@ export const OverflowLink = styled.a<{ y: string }>`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 3.2rem;
+  min-width: 3.2rem;
+  white-space: nowrap;
   color: #fff;
   font-family: ${({ theme }) => theme.font.openSans};
   font-weight: 400;
@@ -83,7 +106,7 @@ export const TechnologiesList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  ${mediaStyles('lg', 'flex-direction: row')}
+  ${mediaStyles('lg', 'flex-direction: row; flex-wrap: wrap')}
 `;
 
 export const TechnologiesListItem = styled.li`
@@ -93,17 +116,22 @@ export const TechnologiesListItem = styled.li`
   ${mediaStyles('lg', 'margin: 0 0.2rem 0 0')}
 `;
 
-export const Wrapper = styled(Box)`
+// Hover dims the preview and reveals the links, so only cards with a link get it.
+export const Wrapper = styled(Box)<{ $interactive: boolean }>`
   width: 100%;
   background-color: ${({ theme }) => theme.color.layout};
   border-radius: 10px;
-  &:hover ${PreviewImage} {
-    filter: brightness(0.17);
-    transition: filter ease-in-out 0.2s;
-  }
-  &:hover ${OverflowLink} {
-    display: block;
-    opacity: 1;
-    transition: opacity ease-in-out 0.2s;
-  }
+  ${({ $interactive }) =>
+    $interactive &&
+    css`
+      &:hover ${PreviewImage} {
+        filter: brightness(0.17);
+        transition: filter ease-in-out 0.2s;
+      }
+      &:hover ${OverflowLink} {
+        display: block;
+        opacity: 1;
+        transition: opacity ease-in-out 0.2s;
+      }
+    `}
 `;
