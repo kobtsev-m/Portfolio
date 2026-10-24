@@ -15,13 +15,14 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 0.2rem;
     overflow-x: hidden;
   }
+  /* All sizes are in rem. Phones keep the original 55px; wider screens grow gently to 64px (about 80% of the original 80px). */
   :root {
     ${mediaStyles('xs', 'font-size: 55px')};
-    ${mediaStyles('sm', 'font-size: 60px')};
-    ${mediaStyles('md', 'font-size: 65px')};
-    ${mediaStyles('lg', 'font-size: 70px')};
-    ${mediaStyles('xl', 'font-size: 75px')};
-    ${mediaStyles('xxl', 'font-size: 80px')};
+    ${mediaStyles('sm', 'font-size: 56px')};
+    ${mediaStyles('md', 'font-size: 57px')};
+    ${mediaStyles('lg', 'font-size: 58px')};
+    ${mediaStyles('xl', 'font-size: 61px')};
+    ${mediaStyles('xxl', 'font-size: 64px')};
   }
   hr {
       border: none;

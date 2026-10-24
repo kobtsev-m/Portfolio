@@ -111,9 +111,10 @@ export const TechnologiesList = styled.ul`
 
 export const TechnologiesListItem = styled.li`
   color: ${({ theme }) => rgba(theme.color.accent, 0.8)};
+  font-size: 0.23rem;
   margin: 0 0 0.2rem 0;
   white-space: nowrap;
-  ${mediaStyles('lg', 'margin: 0 0.2rem 0 0')}
+  ${mediaStyles('lg', 'margin: 0 0.24rem 0.12rem 0')}
 `;
 
 // Hover dims the preview and reveals the links, so only cards with a link get it.

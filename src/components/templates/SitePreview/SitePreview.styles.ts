@@ -31,15 +31,23 @@ export const Bar = styled.div`
   font-family: ${({ theme }) => theme.font.montserrat};
 `;
 
+// Title and subtitle are centred on each other vertically (not baseline-aligned).
 export const Title = styled.div`
   flex: 1;
   min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
   color: ${({ theme }) => theme.color.font};
   font-size: 0.28rem;
   font-weight: 600;
+  span {
+    font-size: 0.22rem;
+    font-weight: 400;
+    opacity: 0.6;
+  }
 `;
 
 export const OpenLink = styled.a`

@@ -49,12 +49,26 @@ export const CommercialCard: FC<CommercialCardProps> = (props) => {
   const { t } = useTranslation();
   const previewLink = useSitePreview();
 
+  // subtitle is shown next to the project name in the preview popup.
   const links = [
-    { href: siteLink, label: t('projects.webSite') },
-    { href: caseStudyLink, label: t('projects.caseStudy') },
-    { href: githubLink, label: t('projects.openSourceRepository') }
-  ].filter((link): link is { href: string; label: string } =>
-    Boolean(link.href)
+    {
+      href: siteLink,
+      label: t('projects.webSite'),
+      subtitle: t('preview.officialSite')
+    },
+    {
+      href: caseStudyLink,
+      label: t('projects.caseStudy'),
+      subtitle: t('preview.businesswareSite')
+    },
+    {
+      href: githubLink,
+      label: t('projects.openSourceRepository'),
+      subtitle: ''
+    }
+  ].filter(
+    (link): link is { href: string; label: string; subtitle: string } =>
+      Boolean(link.href)
   );
 
   // Overlay buttons are stacked around the centre of the preview, 1.1rem apart.
@@ -101,7 +115,11 @@ export const CommercialCard: FC<CommercialCardProps> = (props) => {
                 key={link.href}
                 y={linkOffset(i)}
                 href={link.href}
-                onClick={previewLink(link.href, companyName ?? '')}
+                onClick={previewLink(
+                  link.href,
+                  companyName ?? '',
+                  link.subtitle
+                )}
                 target='_blank'
                 rel='noreferrer'
               >

@@ -6,7 +6,7 @@ export const DemoTitle = styled.h3`
   font-family: ${({ theme }) => theme.font.montserrat};
   font-style: normal;
   font-weight: 600;
-  font-size: 0.24rem;
-  line-height: 0.29rem;
+  font-size: 0.28rem;
+  line-height: 0.36rem;
   text-transform: uppercase;
 `;

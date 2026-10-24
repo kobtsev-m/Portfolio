@@ -6,8 +6,9 @@ export const InscriptionText = styled.h5`
   font-family: ${({ theme }) => theme.font.montserrat};
   font-style: normal;
   font-weight: 600;
-  font-size: 0.18rem;
-  line-height: 0.24rem;
+  font-size: 0.24rem;
+  line-height: 0.32rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   transform: translateX(50%) rotate(90deg);
 `;

@@ -52,7 +52,7 @@
       "description": "Service for the Institute of Cytology and Genetics to store, search and analyse research and experiments."
     },
     "hobbio": {
-      "description": "My own small startup: hobby, event and place discovery app for iOS, Android and web. I build it end to end — Expo app with 110+ store releases, NestJS backend with queues, YooKassa subscriptions, Kubernetes."
+      "description": "My own small startup: hobby, event and place discovery app for iOS, Android and web. I built it end to end — Expo app with 110+ store releases, NestJS backend with queues, YooKassa subscriptions, Kubernetes."
     },
     "present": "present",
     "inqi": {
@@ -96,6 +96,9 @@
   "preview": {
     "openInNewTab": "Open in new tab",
     "close": "Close",
-    "loading": "Loading the site…"
+    "loading": "Loading the site…",
+    "officialSite": "Official website",
+    "businesswareSite": "Businessware website",
+    "ownProject": "Own project"
   }
 }

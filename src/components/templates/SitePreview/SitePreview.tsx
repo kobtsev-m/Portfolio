@@ -36,6 +36,8 @@ const canEmbed = (url: string) => {
 interface Preview {
   url: string;
   title: string;
+  // Shown next to the title, e.g. "Official website".
+  subtitle?: string;
   // A full-page image shown instead of a live frame, for pages that can't be embedded.
   snapshot?: string;
 }
@@ -48,13 +50,13 @@ export const useOpenPreview = () => useContext(SitePreviewContext);
 /** Returns an onClick that opens the link in the preview popup; modified clicks still open a new tab. */
 export const useSitePreview = () => {
   const open = useContext(SitePreviewContext);
-  return (url: string, title: string) =>
+  return (url: string, title: string, subtitle?: string) =>
     (e: MouseEvent<HTMLAnchorElement>) => {
       const modified = e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0;
       const snapshot = pageSnapshots[url];
       if (modified || (!snapshot && !canEmbed(url))) return;
       e.preventDefault();
-      open({ url, title, snapshot });
+      open({ url, title, subtitle, snapshot });
     };
 };
 
@@ -91,7 +93,10 @@ export const SitePreviewProvider: FC<{ children: ReactNode }> = ({
             onClick={(e) => e.stopPropagation()}
           >
             <Bar>
-              <Title>{preview.title}</Title>
+              <Title>
+                {preview.title}
+                {preview.subtitle && <span>{preview.subtitle}</span>}
+              </Title>
               <OpenLink href={preview.url} target='_blank' rel='noreferrer'>
                 <svg
                   viewBox='0 0 24 24'

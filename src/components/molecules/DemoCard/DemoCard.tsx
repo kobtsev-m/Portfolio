@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Box, CustomIcon } from '~/components/atoms';
 import {
   TechnologiesListItem,
@@ -31,6 +32,7 @@ export const DemoCard: FC<DemoCardProps> = (props) => {
     icon
   } = props;
   const previewLink = useSitePreview();
+  const { t } = useTranslation();
   // With a site link the whole card is the link (it opens the preview popup).
   const linkProps = demoLink
     ? {
@@ -38,7 +40,7 @@ export const DemoCard: FC<DemoCardProps> = (props) => {
         href: demoLink,
         target: '_blank',
         rel: 'noreferrer',
-        onClick: previewLink(demoLink, projectName)
+        onClick: previewLink(demoLink, projectName, t('preview.ownProject'))
       }
     : {};
   return (

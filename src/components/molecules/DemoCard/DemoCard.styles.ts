@@ -38,18 +38,18 @@ export const CardTitle = styled.h4`
   font-family: ${({ theme }) => theme.font.montserrat};
   font-style: normal;
   font-weight: 600;
-  font-size: 0.24rem;
-  line-height: 0.29rem;
+  font-size: 0.32rem;
+  line-height: 0.42rem;
 `;
 
 export const CardDescription = styled.p`
   color: ${({ theme }) => theme.color.font};
   font-family: ${({ theme }) => theme.font.montserrat};
   font-style: normal;
-  font-weight: 300;
-  font-size: 0.2rem;
-  line-height: 0.29rem;
-  margin: 0.15rem 0;
+  font-weight: 400;
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  margin: 0.15rem 0 0.2rem;
 `;
 
 export const TechnologiesList = styled.ul`
@@ -62,6 +62,7 @@ export const TechnologiesList = styled.ul`
 
 export const TechnologiesListItem = styled.li`
   color: ${({ theme }) => rgba(theme.color.font, 0.5)};
+  font-size: 0.22rem;
   white-space: nowrap;
   margin: 0 0 0.2rem 0;
   ${mediaStyles('lg', 'margin: 0 0.2rem 0.1rem 0')}
