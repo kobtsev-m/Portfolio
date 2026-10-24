@@ -27,19 +27,19 @@
     "showMore": "Show more",
     "hide": "Hide",
     "bf": {
-      "companyName": "Bushfire AI",
-      "position": "React, Python Full-Stack<0></0>Team Lead / Tech Lead",
-      "description": "AI wildfire detection on live 360° cameras in California and Australia, with alerts to emergency services. I led the team (hiring, onboarding, planning, client communication) and was the main contributor to the web app: camera views, detections and a large admin panel on React + GraphQL (AWS AppSync), plus the serverless AWS backend."
+      "companyName": "Bushfire",
+      "position": "React, Python Full-Stack<0></0>Team Lead",
+      "description": "AI wildfire detection on 50–100 live 360° cameras in California, Australia and Africa, with alerts to emergency services. I led the team (hiring, onboarding, planning, client communication) and was the main contributor to the web app: camera views, detections and a large admin panel on React + GraphQL (AWS AppSync), plus the serverless AWS backend."
     },
     "wo": {
       "companyName": "Destini Takeoff",
       "position": "Angular Front-End<0></0>Team Lead",
-      "description": "Construction takeoff tool — \"AutoCAD in the browser\" with AI detection of walls, doors, windows and rooms. I led the front-end team from the start: geometry editor, PDF workflows, a YOLO model running in the browser on ONNX Runtime Web, performance tuning for heavy drawings."
+      "description": "Construction takeoff tool with tens of thousands of users — \"AutoCAD in the browser\" with AI detection of walls, doors, windows and rooms. I led the front-end team from the start: geometry editor, PDF workflows, a YOLO model running in the browser on ONNX Runtime Web, performance tuning for heavy drawings."
     },
     "fs": {
-      "companyName": "FirstStep AI",
+      "companyName": "FirstStep",
       "position": "React, Node.js Full-Stack developer",
-      "description": "No-code platform for training computer-vision models (classification, detection, segmentation) and exporting them as Android apps. I built core pages, dataset upload and training flows, the annotation canvas, authentication and subscriptions."
+      "description": "No-code B2B platform (~100 business clients) for training computer-vision models (classification, detection, segmentation) and exporting them as Android apps. I built core pages, dataset upload and training flows, the annotation canvas, authentication and subscriptions."
     },
     "ic": {
       "companyName": "Integral Commodities SA",
@@ -57,13 +57,13 @@
     "present": "present",
     "inqi": {
       "companyName": "InQI",
-      "position": "Senior Full-Stack Engineer",
-      "description": "AEC/GIS platform for site planning: ArcGIS-based web editor, iOS/Android app, geometry and export services and an AI assistant. I designed the AI spend-control system, worked on the assistant (OpenAI Agents SDK, MCP tools on AWS Lambda, SSE), built Stripe subscriptions with AI credits and shipped 60+ mobile releases."
+      "position": "Senior Full-Stack Engineer<0></0>Team Lead",
+      "description": "AEC/GIS platform for site planning with ~10,000 users, now focused on B2B: ArcGIS-based web editor, iOS/Android app, geometry and export services and an AI assistant. I designed the AI spend-control system, worked on the assistant (OpenAI Agents SDK, MCP tools on AWS Lambda, SSE), built Stripe subscriptions with AI credits and shipped 60+ mobile releases."
     },
     "aid": {
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
-      "description": "AI analysis of digital stethoscope recordings. Desktop app with device connection, cloud sync and auto-update. I built the AWS infrastructure and the Node.js backend for storing and syncing device data, with a firmware / app version registry."
+      "description": "B2B product for clinics: AI analysis of digital stethoscope recordings. Desktop app with device connection, cloud sync and auto-update. I built the AWS infrastructure and the Node.js backend for storing and syncing device data, with a firmware / app version registry."
     },
     "reelabs": {
       "description": "My own small startup: Telegram-first service for AI video reels — LLM scripts, HeyGen avatars, ElevenLabs voice, Remotion rendering on AWS Lambda, YooKassa billing."
