@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.541b6788.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.541b6788.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.74ce177c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.74ce177c.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.1df2450b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1df2450b.js.map",
     "static/js/2.cf0e491d.chunk.js": "/Portfolio/static/js/2.cf0e491d.chunk.js",
@@ -36,8 +36,8 @@
     "static/media/mail-link.e1ed3d0c.svg": "/Portfolio/static/media/mail-link.e1ed3d0c.svg",
     "static/media/news-preview.ce602ab4.jpg": "/Portfolio/static/media/news-preview.ce602ab4.jpg",
     "static/media/news.a3d68008.svg": "/Portfolio/static/media/news.a3d68008.svg",
-    "static/media/resume-en.084475f5.pdf": "/Portfolio/static/media/resume-en.084475f5.pdf",
-    "static/media/resume-ru.13720425.pdf": "/Portfolio/static/media/resume-ru.13720425.pdf",
+    "static/media/resume-en.808d9701.pdf": "/Portfolio/static/media/resume-en.808d9701.pdf",
+    "static/media/resume-ru.ed76dccf.pdf": "/Portfolio/static/media/resume-ru.ed76dccf.pdf",
     "static/media/telegram-brands.2edc5f39.svg": "/Portfolio/static/media/telegram-brands.2edc5f39.svg",
     "static/media/telegram-link.27377ddf.svg": "/Portfolio/static/media/telegram-link.27377ddf.svg",
     "static/media/website-link.5eb025a9.svg": "/Portfolio/static/media/website-link.5eb025a9.svg",
@@ -48,6 +48,6 @@
   "entrypoints": [
     "static/js/runtime-main.1df2450b.js",
     "static/js/2.cf0e491d.chunk.js",
-    "static/js/main.541b6788.chunk.js"
+    "static/js/main.74ce177c.chunk.js"
   ]
 }
