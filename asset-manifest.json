@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.0f7dfd63.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0f7dfd63.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.c584a9b9.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c584a9b9.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.1df2450b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1df2450b.js.map",
-    "static/js/2.cf0e491d.chunk.js": "/Portfolio/static/js/2.cf0e491d.chunk.js",
-    "static/js/2.cf0e491d.chunk.js.map": "/Portfolio/static/js/2.cf0e491d.chunk.js.map",
+    "static/js/2.fb43116e.chunk.js": "/Portfolio/static/js/2.fb43116e.chunk.js",
+    "static/js/2.fb43116e.chunk.js.map": "/Portfolio/static/js/2.fb43116e.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/js/2.cf0e491d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cf0e491d.chunk.js.LICENSE.txt",
+    "static/js/2.fb43116e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.fb43116e.chunk.js.LICENSE.txt",
     "static/media/aid-preview.ba35fe18.jpg": "/Portfolio/static/media/aid-preview.ba35fe18.jpg",
     "static/media/aid.9976dac7.svg": "/Portfolio/static/media/aid.9976dac7.svg",
     "static/media/amdb-preview.dd60c61f.png": "/Portfolio/static/media/amdb-preview.dd60c61f.png",
@@ -16,10 +16,10 @@
     "static/media/avatar3.f3976018.jpg": "/Portfolio/static/media/avatar3.f3976018.jpg",
     "static/media/bars-solid.e8db7520.svg": "/Portfolio/static/media/bars-solid.e8db7520.svg",
     "static/media/bf-preview.e34d2883.png": "/Portfolio/static/media/bf-preview.e34d2883.png",
-    "static/media/bw-aid.9284471d.jpg": "/Portfolio/static/media/bw-aid.9284471d.jpg",
-    "static/media/bw-bushfire.591a0f95.jpg": "/Portfolio/static/media/bw-bushfire.591a0f95.jpg",
-    "static/media/bw-firststep.f20cfa7d.jpg": "/Portfolio/static/media/bw-firststep.f20cfa7d.jpg",
-    "static/media/bw-news.fe7309be.jpg": "/Portfolio/static/media/bw-news.fe7309be.jpg",
+    "static/media/bw-aid.ec1eb831.jpg": "/Portfolio/static/media/bw-aid.ec1eb831.jpg",
+    "static/media/bw-bushfire.bf85902c.jpg": "/Portfolio/static/media/bw-bushfire.bf85902c.jpg",
+    "static/media/bw-firststep.8b568743.jpg": "/Portfolio/static/media/bw-firststep.8b568743.jpg",
+    "static/media/bw-news.76976e4c.jpg": "/Portfolio/static/media/bw-news.76976e4c.jpg",
     "static/media/caret-dark.dc59f7fd.svg": "/Portfolio/static/media/caret-dark.dc59f7fd.svg",
     "static/media/caret-light.33ebd92f.svg": "/Portfolio/static/media/caret-light.33ebd92f.svg",
     "static/media/check-solid.5dcf9568.svg": "/Portfolio/static/media/check-solid.5dcf9568.svg",
@@ -36,8 +36,8 @@
     "static/media/mail-link.e1ed3d0c.svg": "/Portfolio/static/media/mail-link.e1ed3d0c.svg",
     "static/media/news-preview.ce602ab4.jpg": "/Portfolio/static/media/news-preview.ce602ab4.jpg",
     "static/media/news.a3d68008.svg": "/Portfolio/static/media/news.a3d68008.svg",
-    "static/media/resume-en.b2d5e73f.pdf": "/Portfolio/static/media/resume-en.b2d5e73f.pdf",
-    "static/media/resume-ru.bcce8e27.pdf": "/Portfolio/static/media/resume-ru.bcce8e27.pdf",
+    "static/media/resume-en.4c44fe2b.pdf": "/Portfolio/static/media/resume-en.4c44fe2b.pdf",
+    "static/media/resume-ru.bd4dc2d1.pdf": "/Portfolio/static/media/resume-ru.bd4dc2d1.pdf",
     "static/media/telegram-brands.2edc5f39.svg": "/Portfolio/static/media/telegram-brands.2edc5f39.svg",
     "static/media/telegram-link.27377ddf.svg": "/Portfolio/static/media/telegram-link.27377ddf.svg",
     "static/media/website-link.5eb025a9.svg": "/Portfolio/static/media/website-link.5eb025a9.svg",
@@ -47,7 +47,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1df2450b.js",
-    "static/js/2.cf0e491d.chunk.js",
-    "static/js/main.0f7dfd63.chunk.js"
+    "static/js/2.fb43116e.chunk.js",
+    "static/js/main.c584a9b9.chunk.js"
   ]
 }
