@@ -94,7 +94,11 @@
     "format": "Invalid format"
   },
   "preview": {
+    "open": "Open",
     "openInNewTab": "Open in new tab",
+    "zoomOut": "Zoom out",
+    "zoomIn": "Zoom in",
+    "zoomReset": "Reset zoom",
     "close": "Close",
     "loading": "Loading the site…",
     "officialSite": "Official website",

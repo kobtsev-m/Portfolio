@@ -192,7 +192,7 @@ export const projectsData = {
       icon: HobbioIcon,
       description: t('projects.hobbio.description'),
       technologies: ['Expo', 'NestJS', 'PostgreSQL', 'Redis', 'Kubernetes'],
-      demoLink: 'https://hobbio.ru',
+      demoLink: '',
       githubLink: ''
     },
     {
@@ -200,7 +200,7 @@ export const projectsData = {
       icon: ReelabsIcon,
       description: t('projects.reelabs.description'),
       technologies: ['NestJS', 'BullMQ', 'OpenAI', 'Remotion', 'AWS Lambda'],
-      demoLink: 'https://reelabs.ru',
+      demoLink: '',
       githubLink: ''
     }
   ]

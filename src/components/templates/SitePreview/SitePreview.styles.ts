@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
+import { breakpoints } from '~/styles';
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -35,7 +36,6 @@ export const Bar = styled.div`
 export const Title = styled.div`
   flex: 1;
   min-width: 0;
-  display: flex;
   align-items: center;
   gap: 0.25rem;
   overflow: hidden;
@@ -48,10 +48,29 @@ export const Title = styled.div`
     font-weight: 400;
     opacity: 0.6;
   }
+  /* On phones the title and subtitle don't fit next to the buttons, so the bar shows only "Open" and close. */
+  display: none;
+  ${breakpoints.md} {
+    display: flex;
+    order: -2;
+  }
 `;
 
 export const OpenLink = styled.a`
   flex: none;
+  margin-right: auto;
+  .full {
+    display: none;
+  }
+  ${breakpoints.md} {
+    margin-right: 0;
+    .full {
+      display: inline;
+    }
+    .short {
+      display: none;
+    }
+  }
   display: inline-flex;
   align-items: center;
   gap: 0.1rem;
@@ -73,6 +92,44 @@ export const OpenLink = styled.a`
   }
 `;
 
+// Zoom for Businessware snapshots, desktop only; it sits before "Open in new tab".
+export const Zoom = styled.div`
+  flex: none;
+  display: none;
+  align-items: center;
+  border: 1px solid ${({ theme }) => theme.color.thin};
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: ${({ theme }) => theme.font.montserrat};
+  ${breakpoints.md} {
+    display: inline-flex;
+    order: -1;
+  }
+  button {
+    height: 0.42rem;
+    min-width: 0.42rem;
+    padding: 0 0.08rem;
+    border: none;
+    background: transparent;
+    color: ${({ theme }) => theme.color.font};
+    font-size: 0.26rem;
+    line-height: 1;
+    cursor: pointer;
+    &:hover:not(:disabled) {
+      background-color: ${({ theme }) => theme.color.thin};
+    }
+    &:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+  }
+  .value {
+    min-width: 0.7rem;
+    font-size: 0.2rem;
+    font-weight: 600;
+  }
+`;
+
 export const CloseButton = styled.button`
   flex: none;
   width: 0.6rem;
@@ -89,11 +146,13 @@ export const CloseButton = styled.button`
   }
 `;
 
-export const FrameBox = styled.div`
+// White only while loading (behind the "Loading" text). Once loaded it is transparent: the frame is drawn
+// in whole pixels, and a white box behind it would show as a thin line under dark pages like the PDF viewer.
+export const FrameBox = styled.div<{ $loaded: boolean }>`
   position: relative;
   flex: 1;
   display: flex;
-  background-color: #fff;
+  background-color: ${({ $loaded }) => ($loaded ? 'transparent' : '#fff')};
 `;
 
 export const Frame = styled.iframe`
@@ -124,5 +183,10 @@ export const SnapshotScroll = styled.div`
   img {
     display: block;
     width: 100%;
+    /* Zoomed out, the page is centred and the white background shows on both sides. */
+    margin: 0 auto;
+    ${breakpoints.md} {
+      width: var(--snapshot-zoom, 100%);
+    }
   }
 `;

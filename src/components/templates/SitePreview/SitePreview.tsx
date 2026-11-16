@@ -1,5 +1,6 @@
 import {
   createContext,
+  CSSProperties,
   FC,
   MouseEvent,
   ReactNode,
@@ -20,7 +21,8 @@ import {
   Frame,
   FrameBox,
   Loading,
-  SnapshotScroll
+  SnapshotScroll,
+  Zoom
 } from './SitePreview.styles';
 
 // These sites refuse to be shown in an iframe (X-Frame-Options), so their links open in a new tab.
@@ -29,6 +31,20 @@ const NOT_EMBEDDABLE = ['businesswaretech.com', 'amdb.online'];
 const canEmbed = (url: string) => {
   const { hostname } = new URL(url);
   return !NOT_EMBEDDABLE.some(
+    (host) => hostname === host || hostname.endsWith(`.${host}`)
+  );
+};
+
+// Businessware case-study snapshots are tall pages; these can be zoomed out to see more at once.
+const ZOOMABLE = ['businesswaretech.com'];
+const ZOOM_MIN = 40;
+const ZOOM_MAX = 100;
+const ZOOM_DEFAULT = 80;
+const ZOOM_STEP = 10;
+
+const isZoomable = (url: string) => {
+  const { hostname } = new URL(url);
+  return ZOOMABLE.some(
     (host) => hostname === host || hostname.endsWith(`.${host}`)
   );
 };
@@ -65,6 +81,8 @@ export const SitePreviewProvider: FC<{ children: ReactNode }> = ({
 }) => {
   const [preview, setPreview] = useState<Preview | null>(null);
   const [loaded, setLoaded] = useState(false);
+  // Kept between popups so a reader who zoomed out once doesn't have to repeat it on every case study.
+  const [zoom, setZoom] = useState(ZOOM_DEFAULT);
   const { t } = useTranslation();
   const close = useCallback(() => setPreview(null), []);
 
@@ -80,6 +98,13 @@ export const SitePreviewProvider: FC<{ children: ReactNode }> = ({
       document.body.style.overflow = '';
     };
   }, [preview, close]);
+
+  const zoomable = !!preview?.snapshot && isZoomable(preview.url);
+  // Chrome never fires onLoad for a PDF in a frame, and its viewer paints its own dark background at once.
+  const isPdf = !!preview && /\.pdf($|[?#])/i.test(preview.url);
+  const frameReady = loaded || isPdf;
+  const changeZoom = (delta: number) =>
+    setZoom((z) => Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, z + delta)));
 
   return (
     <SitePreviewContext.Provider value={setPreview}>
@@ -110,19 +135,54 @@ export const SitePreviewProvider: FC<{ children: ReactNode }> = ({
                   <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71' />
                   <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71' />
                 </svg>
-                {t('preview.openInNewTab')}
+                <span className='full'>{t('preview.openInNewTab')}</span>
+                <span className='short'>{t('preview.open')}</span>
               </OpenLink>
+              {zoomable && (
+                <Zoom>
+                  <button
+                    onClick={() => changeZoom(-ZOOM_STEP)}
+                    disabled={zoom <= ZOOM_MIN}
+                    aria-label={t('preview.zoomOut')}
+                  >
+                    −
+                  </button>
+                  <button
+                    className='value'
+                    onClick={() => setZoom(ZOOM_DEFAULT)}
+                    aria-label={t('preview.zoomReset')}
+                  >
+                    {zoom}%
+                  </button>
+                  <button
+                    onClick={() => changeZoom(ZOOM_STEP)}
+                    disabled={zoom >= ZOOM_MAX}
+                    aria-label={t('preview.zoomIn')}
+                  >
+                    +
+                  </button>
+                </Zoom>
+              )}
               <CloseButton onClick={close} aria-label={t('preview.close')}>
                 ×
               </CloseButton>
             </Bar>
             {preview.snapshot ? (
               <SnapshotScroll>
-                <img src={preview.snapshot} alt={preview.title} />
+                <img
+                  src={preview.snapshot}
+                  alt={preview.title}
+                  // Applied on desktop only, via the CSS variable (see SnapshotScroll).
+                  style={
+                    zoomable
+                      ? ({ '--snapshot-zoom': `${zoom}%` } as CSSProperties)
+                      : undefined
+                  }
+                />
               </SnapshotScroll>
             ) : (
-              <FrameBox>
-                {!loaded && <Loading>{t('preview.loading')}</Loading>}
+              <FrameBox $loaded={frameReady}>
+                {!frameReady && <Loading>{t('preview.loading')}</Loading>}
                 <Frame
                   src={preview.url}
                   title={preview.title}
