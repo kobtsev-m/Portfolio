@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.c584a9b9.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c584a9b9.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.19588156.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.19588156.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.1df2450b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1df2450b.js.map",
-    "static/js/2.fb43116e.chunk.js": "/Portfolio/static/js/2.fb43116e.chunk.js",
-    "static/js/2.fb43116e.chunk.js.map": "/Portfolio/static/js/2.fb43116e.chunk.js.map",
+    "static/js/2.7d95aee8.chunk.js": "/Portfolio/static/js/2.7d95aee8.chunk.js",
+    "static/js/2.7d95aee8.chunk.js.map": "/Portfolio/static/js/2.7d95aee8.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/js/2.fb43116e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.fb43116e.chunk.js.LICENSE.txt",
+    "static/js/2.7d95aee8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.7d95aee8.chunk.js.LICENSE.txt",
     "static/media/aid-preview.ba35fe18.jpg": "/Portfolio/static/media/aid-preview.ba35fe18.jpg",
     "static/media/aid.9976dac7.svg": "/Portfolio/static/media/aid.9976dac7.svg",
     "static/media/amdb-preview.dd60c61f.png": "/Portfolio/static/media/amdb-preview.dd60c61f.png",
@@ -36,8 +36,8 @@
     "static/media/mail-link.e1ed3d0c.svg": "/Portfolio/static/media/mail-link.e1ed3d0c.svg",
     "static/media/news-preview.ce602ab4.jpg": "/Portfolio/static/media/news-preview.ce602ab4.jpg",
     "static/media/news.a3d68008.svg": "/Portfolio/static/media/news.a3d68008.svg",
-    "static/media/resume-en.4c44fe2b.pdf": "/Portfolio/static/media/resume-en.4c44fe2b.pdf",
-    "static/media/resume-ru.bd4dc2d1.pdf": "/Portfolio/static/media/resume-ru.bd4dc2d1.pdf",
+    "static/media/resume-en.8c76a538.pdf": "/Portfolio/static/media/resume-en.8c76a538.pdf",
+    "static/media/resume-ru.950be587.pdf": "/Portfolio/static/media/resume-ru.950be587.pdf",
     "static/media/telegram-brands.2edc5f39.svg": "/Portfolio/static/media/telegram-brands.2edc5f39.svg",
     "static/media/telegram-link.27377ddf.svg": "/Portfolio/static/media/telegram-link.27377ddf.svg",
     "static/media/website-link.5eb025a9.svg": "/Portfolio/static/media/website-link.5eb025a9.svg",
@@ -47,7 +47,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1df2450b.js",
-    "static/js/2.fb43116e.chunk.js",
-    "static/js/main.c584a9b9.chunk.js"
+    "static/js/2.7d95aee8.chunk.js",
+    "static/js/main.19588156.chunk.js"
   ]
 }
