@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "darkMode": "ダークモード",
+    "lightMode": "ライトモード",
+    "about": "自己紹介",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ",
+    "resume": "履歴書"
+  },
+  "intro": {
+    "title": "Michael Kobtsev",
+    "subtitle": "シニア フルスタックエンジニア · テックリード",
+    "description": "AI を活用したプロダクトを一貫して開発しています：Web、モバイル、バックエンド、クラウド、決済。Python、TypeScript、React、Node.js、LLM エージェントとツール。",
+    "animate": "アニメーション"
+  },
+  "about": {
+    "text": "こんにちは、Michael です。<0>7 年以上の実務経験を持つフルスタックエンジニア</0>で、Team Lead や Tech Lead も務めてきました。<1></1><1></1>2021 年から AI ソフトウェア開発会社 <0>Businessware Technologies</0> で、長期のクライアントプロジェクトに携わっています。<0>AI を中核に据えたプロダクト</0>を開発しています：LLM エージェントとツール（OpenAI Agents SDK、MCP、RAG）、AI コスト管理、ドキュメントと動画の AI パイプライン。アーキテクチャから本番運用まで、モバイルリリース、インフラ、決済も含めて担当します。<1></1><1></1>タイ・バンコク（UTC+7）を拠点に、海外のチームとリモートで働いています。<0>シニア / テックリードのポジションや業務委託案件を歓迎します。</0>",
+    "technologies": "スキル",
+    "teamManagement": "チームマネジメント"
+  },
+  "projects": {
+    "webSite": "公式サイト",
+    "openSourceRepository": "オープンソースリポジトリ",
+    "readMore": "詳しく見る",
+    "otherProjects": "個人プロジェクト",
+    "commercial": "商用",
+    "demo": "個人",
+    "showMore": "もっと見る",
+    "hide": "閉じる",
+    "bf": {
+      "companyName": "Bushfire",
+      "position": "React、Python フルスタック<0></0>Team Lead",
+      "description": "カリフォルニア、オーストラリア、アフリカに設置された 50〜100 台の 360° ライブカメラによる AI 山火事検知システムで、緊急サービスへの通知も行います。チームを率い（採用、オンボーディング、計画、クライアント対応）、Web アプリの主要開発者として、カメラビュー、検知結果、React + GraphQL（AWS AppSync）による大規模な管理画面、AWS のサーバーレスバックエンドを担当しました。"
+    },
+    "wo": {
+      "companyName": "Destini Takeoff",
+      "position": "フロントエンド & Python AI<0></0>Team Lead",
+      "description": "数万人が利用する建築図面の数量拾い出しツール ——「ブラウザで動く AutoCAD」で、壁・ドア・窓・部屋を AI で検出します。プロジェクト開始時からフロントエンドチームと Python AI マイクロサービス部門（自社開発の画像認識モデル、キューベースのワーカー）を率い、ジオメトリエディタ、PDF ワークフロー、ONNX Runtime Web によるブラウザ上の YOLO モデル、大きな図面のパフォーマンス改善を担当しました。"
+    },
+    "fs": {
+      "companyName": "FirstStep",
+      "position": "React、Node.js フルスタック開発者",
+      "description": "約 100 社の法人顧客を持つノーコード B2B プラットフォームで、画像認識モデル（分類、検出、セグメンテーション）を学習させ Android アプリとして書き出せます。主要ページ、データセットのアップロードと学習フロー、アノテーション用キャンバス、認証、サブスクリプションを開発しました。"
+    },
+    "ic": {
+      "companyName": "Integral Commodities SA",
+      "position": "React フロントエンド開発者",
+      "description": "ポリマー、肥料、硫黄の輸出企業のコーポレートサイト：商品・価格検索、地図、レスポンシブデザイン。"
+    },
+    "amdb": {
+      "companyName": "AMDB",
+      "position": "Python フルスタック開発者",
+      "description": "細胞学・遺伝学研究所向けに、研究や実験データを保存・検索・分析するサービス。"
+    },
+    "hobbio": {
+      "description": "自分の小さなスタートアップ：iOS、Android、Web 向けの趣味・イベント・スポット発見アプリ。一人で一貫して開発しました —— Expo アプリでストアに 110 回以上リリース、キュー付きの NestJS バックエンド、YooKassa のサブスクリプション、Kubernetes。"
+    },
+    "present": "現在",
+    "inqi": {
+      "companyName": "InQI",
+      "position": "シニア フルスタックエンジニア<0></0>Team Lead",
+      "description": "約 10,000 ユーザーの敷地計画向け AEC/GIS プラットフォームで、現在は B2B に注力：ArcGIS ベースの Web エディタ、iOS/Android アプリ、ジオメトリ・エクスポートサービス、AI アシスタント。AI コスト管理システムを設計し、AI アシスタント（OpenAI Agents SDK、AWS Lambda 上の MCP ツール、SSE）を開発、AI クレジット付きの Stripe サブスクリプションを構築し、60 回以上のモバイルリリースを行いました。"
+    },
+    "aid": {
+      "companyName": "AI Diagnostics",
+      "position": "Node.js、AWS<0></0>Tech Lead",
+      "description": "クリニック向け B2B プロダクト：デジタル聴診器の録音を AI で解析します。デバイス接続、クラウド同期、自動アップデートに対応したデスクトップアプリ。デバイスデータの保存・同期のための AWS インフラと Node.js バックエンド、ファームウェアとアプリのバージョン管理を構築しました。"
+    },
+    "reelabs": {
+      "description": "自分の小さなスタートアップ：Telegram ベースの AI 動画リール生成サービス —— LLM による台本、HeyGen のアバター、ElevenLabs の音声、AWS Lambda 上の Remotion レンダリング、YooKassa による課金。"
+    },
+    "clientProject": "クライアント案件",
+    "bw": {
+      "position": "シニア フルスタックエンジニア · Team Lead / Tech Lead",
+      "description": "2003 年創業の AI ソフトウェア開発会社で、海外のクライアント向けに AI エージェント、ドキュメント AI、SaaS プロダクトを開発しています。長期のクライアントプロジェクトを通常 2 件並行して担当しており、主なものは以下のとおりです。",
+      "other": "その他のクライアント向け AI 案件：メールや PDF から発注書を LLM で抽出して ERP に取り込む仕組み（Gemini、FastAPI、Azure）、ハイブリッド検索と機械学習ランキングによる SKU マッチング（Qdrant、LightGBM）、音声からショート動画を作るパイプライン（Whisper、GPT）、RAG を使ったマルチエージェントの文書レビュー（LangGraph、pgvector）。"
+    },
+    "caseStudy": "Businessware のサイトで詳しく見る",
+    "news": {
+      "companyName": "ADS Newspapers",
+      "position": "Python、DevOps<0></0>シニアエンジニア",
+      "description": "ヨーロッパの地方紙出版社向けに、静的な PDF 紙面をインタラクティブにする AI パイプライン：YOLO モデルが各ページの広告枠を見つけ、Gemini が広告を確認して URL を抽出し、検証済みのリンクを正確な座標に埋め込みます。Python / FastAPI サービスと、GCP と S3 上のイベント駆動型クラウド構成を構築しました。"
+    }
+  },
+  "contact": {
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "additionalText": "以下の方法で直接ご連絡いただくこともできます：",
+    "send": "送信",
+    "or": "または"
+  },
+  "errors": {
+    "required": "必須項目です",
+    "format": "形式が正しくありません"
+  },
+  "preview": {
+    "open": "開く",
+    "openInNewTab": "新しいタブで開く",
+    "zoomOut": "縮小",
+    "zoomIn": "拡大",
+    "zoomReset": "ズームをリセット",
+    "close": "閉じる",
+    "loading": "サイトを読み込み中…",
+    "officialSite": "公式サイト",
+    "businesswareSite": "Businessware のサイト",
+    "ownProject": "個人プロジェクト"
+  }
+}

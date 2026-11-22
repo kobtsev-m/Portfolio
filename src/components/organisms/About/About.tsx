@@ -90,7 +90,9 @@ export const About: FC = () => {
                         {(styles, item) =>
                           item && (
                             <AnimatedTechnologiesListItem style={styles}>
-                              {technology.name}
+                              {'key' in technology && technology.key
+                                ? t(`about.${technology.key}`)
+                                : technology.name}
                             </AnimatedTechnologiesListItem>
                           )
                         }

@@ -5,3 +5,4 @@ export * from './ContactForm/ContactForm';
 export * from './ContactLinks/ContactLinks';
 export * from './Nav/Nav';
 export * from './NavCollapse/NavCollapse';
+export * from './LanguageSwitcher/LanguageSwitcher';

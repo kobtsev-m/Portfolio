@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "darkMode": "Dunkler Modus",
+    "lightMode": "Heller Modus",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "resume": "CV"
+  },
+  "intro": {
+    "title": "Michael Kobtsev",
+    "subtitle": "Senior Full-Stack Engineer · Tech Lead",
+    "description": "Ich entwickle KI-gestützte Produkte von Anfang bis Ende: Web, Mobile, Backend, Cloud und Zahlungen. Python, TypeScript, React, Node.js, LLM-Agenten und Tools.",
+    "animate": "Animieren"
+  },
+  "about": {
+    "text": "Hallo, ich bin Michael — <0>Full-Stack Engineer mit mehr als 7 Jahren Berufserfahrung</0>, auch als Team Lead und Tech Lead.<1></1><1></1>Seit 2021 arbeite ich bei <0>Businessware Technologies</0>, einem Unternehmen für KI-Softwareentwicklung, an langfristigen Kundenprojekten. Ich baue <0>Produkte mit KI im Kern</0>: LLM-Agenten und Tools (OpenAI Agents SDK, MCP, RAG), KI-Kostenkontrolle, KI-Pipelines für Dokumente und Video — und bringe sie von der Architektur bis in die Produktion, inklusive Mobile-Releases, Infrastruktur und Zahlungen.<1></1><1></1>Ich lebe in Bangkok, Thailand (UTC+7), und arbeite remote mit internationalen Teams. <0>Offen für Senior- / Tech-Lead-Rollen und Projektarbeit.</0>",
+    "technologies": "Skills",
+    "teamManagement": "Teamführung"
+  },
+  "projects": {
+    "webSite": "Offizielle Website",
+    "openSourceRepository": "Open-Source-Repository",
+    "readMore": "Mehr lesen",
+    "otherProjects": "Eigene Projekte",
+    "commercial": "Kommerziell",
+    "demo": "Eigene",
+    "showMore": "Mehr anzeigen",
+    "hide": "Ausblenden",
+    "bf": {
+      "companyName": "Bushfire",
+      "position": "React, Python Full-Stack<0></0>Team Lead",
+      "description": "KI-Waldbranderkennung mit 50–100 Live-360°-Kameras in Kalifornien, Australien und Afrika, mit Alarmen an Rettungsdienste. Ich habe das Team geleitet (Recruiting, Onboarding, Planung, Kundenkommunikation) und war Hauptentwickler der Web-App: Kameraansichten, Erkennungen und ein großes Admin-Panel mit React + GraphQL (AWS AppSync) sowie das serverlose AWS-Backend."
+    },
+    "wo": {
+      "companyName": "Destini Takeoff",
+      "position": "Front-End & Python AI<0></0>Team Lead",
+      "description": "Mengenermittlung aus Bauplänen mit Zehntausenden Nutzern — „AutoCAD im Browser“ mit KI-Erkennung von Wänden, Türen, Fenstern und Räumen. Ich habe von Anfang an das Front-End-Team und den Bereich der Python-KI-Microservices geleitet (eigene CV-Erkennungsmodelle, Worker mit Queues): Geometrie-Editor, PDF-Workflows, ein YOLO-Modell im Browser mit ONNX Runtime Web, Performance-Optimierung für große Pläne."
+    },
+    "fs": {
+      "companyName": "FirstStep",
+      "position": "React, Node.js Full-Stack-Entwickler",
+      "description": "No-Code-B2B-Plattform (~100 Geschäftskunden) zum Training von Computer-Vision-Modellen (Klassifikation, Detektion, Segmentierung) und deren Export als Android-Apps. Ich habe Kernseiten, Datensatz-Upload und Trainingsabläufe, das Annotations-Canvas, Authentifizierung und Abonnements entwickelt."
+    },
+    "ic": {
+      "companyName": "Integral Commodities SA",
+      "position": "React Front-End-Entwickler",
+      "description": "Unternehmenswebsite eines Exporteurs von Polymeren, Düngemitteln und Schwefel: Produkt- und Preissuche, Karten, responsives Layout."
+    },
+    "amdb": {
+      "companyName": "AMDB",
+      "position": "Python Full-Stack-Entwickler",
+      "description": "Service für das Institut für Zytologie und Genetik zum Speichern, Suchen und Analysieren von Forschungsdaten und Experimenten."
+    },
+    "hobbio": {
+      "description": "Mein eigenes kleines Startup: App zum Entdecken von Hobbys, Events und Orten für iOS, Android und Web. Komplett selbst gebaut — Expo-App mit über 110 Store-Releases, NestJS-Backend mit Queues, YooKassa-Abos, Kubernetes."
+    },
+    "present": "heute",
+    "inqi": {
+      "companyName": "InQI",
+      "position": "Senior Full-Stack Engineer<0></0>Team Lead",
+      "description": "AEC/GIS-Plattform für Standortplanung mit ~10.000 Nutzern, heute mit B2B-Fokus: ArcGIS-basierter Web-Editor, iOS/Android-App, Geometrie- und Exportdienste und ein KI-Assistent. Ich habe das System zur KI-Kostenkontrolle entworfen, am Assistenten gearbeitet (OpenAI Agents SDK, MCP-Tools auf AWS Lambda, SSE), Stripe-Abos mit KI-Credits gebaut und über 60 Mobile-Releases ausgeliefert."
+    },
+    "aid": {
+      "companyName": "AI Diagnostics",
+      "position": "Node.js, AWS<0></0>Tech Lead",
+      "description": "B2B-Produkt für Kliniken: KI-Analyse von Aufnahmen digitaler Stethoskope. Desktop-App mit Geräteanbindung, Cloud-Synchronisation und Auto-Update. Ich habe die AWS-Infrastruktur und das Node.js-Backend zum Speichern und Synchronisieren der Gerätedaten gebaut, mit einem Versionsregister für Firmware und App."
+    },
+    "reelabs": {
+      "description": "Mein eigenes kleines Startup: Telegram-basierter Service für KI-Video-Reels — LLM-Skripte, HeyGen-Avatare, ElevenLabs-Stimmen, Remotion-Rendering auf AWS Lambda, YooKassa-Abrechnung."
+    },
+    "clientProject": "Kundenprojekt",
+    "bw": {
+      "position": "Senior Full-Stack Engineer · Team Lead / Tech Lead",
+      "description": "Unternehmen für KI-Softwareentwicklung (seit 2003), das KI-Agenten, Dokumenten-KI und SaaS-Produkte für internationale Kunden baut. Ich arbeite an langfristigen Kundenprojekten, meist zwei parallel — die wichtigsten sind unten aufgeführt.",
+      "other": "Außerdem KI-Projekte für weitere Kunden: LLM-Extraktion von Bestellungen aus E-Mails und PDFs ins ERP (Gemini, FastAPI, Azure), SKU-Matching mit hybrider Suche und ML-Ranking (Qdrant, LightGBM), Video-Pipeline von Sprache zu Clips (Whisper, GPT), Multi-Agenten-Dokumentenprüfung mit RAG (LangGraph, pgvector)."
+    },
+    "caseStudy": "Mehr bei Businessware",
+    "news": {
+      "companyName": "ADS Newspapers",
+      "position": "Python, DevOps<0></0>Senior Engineer",
+      "description": "KI-Pipeline für europäische Regionalzeitungsverlage, die statische PDF-Ausgaben interaktiv macht: Ein YOLO-Modell findet Anzeigenblöcke auf jeder Seite, Gemini bestätigt die Anzeige und extrahiert ihre URL, und validierte Links werden an den exakten Koordinaten eingefügt. Ich habe den Python-/FastAPI-Service und das eventgesteuerte Cloud-Setup auf GCP und S3 gebaut."
+    }
+  },
+  "contact": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "additionalText": "Sie können mir auch direkt über einen dieser Kanäle schreiben:",
+    "send": "Senden",
+    "or": "Oder"
+  },
+  "errors": {
+    "required": "Pflichtfeld",
+    "format": "Ungültiges Format"
+  },
+  "preview": {
+    "open": "Öffnen",
+    "openInNewTab": "In neuem Tab öffnen",
+    "zoomOut": "Verkleinern",
+    "zoomIn": "Vergrößern",
+    "zoomReset": "Zoom zurücksetzen",
+    "close": "Schließen",
+    "loading": "Website wird geladen…",
+    "officialSite": "Offizielle Website",
+    "businesswareSite": "Businessware-Website",
+    "ownProject": "Eigenes Projekt"
+  }
+}

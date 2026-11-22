@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式",
+    "about": "关于我",
+    "projects": "项目",
+    "contact": "联系",
+    "resume": "简历"
+  },
+  "intro": {
+    "title": "Michael Kobtsev",
+    "subtitle": "高级全栈工程师 · 技术负责人",
+    "description": "我端到端打造 AI 驱动的产品：Web、移动端、后端、云和支付。Python、TypeScript、React、Node.js、LLM 智能体与工具。",
+    "animate": "动画"
+  },
+  "about": {
+    "text": "你好，我是 Michael —— <0>拥有 7 年以上商业开发经验的全栈工程师</0>，担任过 Team Lead 和 Tech Lead。<1></1><1></1>自 2021 年起，我在 AI 软件开发公司 <0>Businessware Technologies</0> 参与长期客户项目。我打造<0>以 AI 为核心的产品</0>：LLM 智能体与工具（OpenAI Agents SDK、MCP、RAG）、AI 成本控制、文档与视频 AI 流水线，并负责从架构到生产上线的全过程，包括移动端发布、基础设施和支付。<1></1><1></1>我常驻泰国曼谷（UTC+7），与国际团队远程合作。<0>欢迎高级工程师 / 技术负责人职位和合同项目。</0>",
+    "technologies": "技能",
+    "teamManagement": "团队管理"
+  },
+  "projects": {
+    "webSite": "官方网站",
+    "openSourceRepository": "开源仓库",
+    "readMore": "了解更多",
+    "otherProjects": "个人项目",
+    "commercial": "商业项目",
+    "demo": "个人",
+    "showMore": "显示更多",
+    "hide": "收起",
+    "bf": {
+      "companyName": "Bushfire",
+      "position": "React、Python 全栈<0></0>Team Lead",
+      "description": "基于 AI 的森林火灾检测系统，覆盖加州、澳大利亚和非洲的 50–100 台 360° 实时摄像头，并向应急服务发送警报。我带领团队（招聘、入职培训、计划、客户沟通），并是 Web 应用的主要开发者：摄像头画面、检测结果以及基于 React + GraphQL（AWS AppSync）的大型管理后台，同时负责 AWS 无服务器后端。"
+    },
+    "wo": {
+      "companyName": "Destini Takeoff",
+      "position": "前端与 Python AI<0></0>Team Lead",
+      "description": "面向建筑图纸工程量计算的工具，拥有数万用户 ——「浏览器里的 AutoCAD」，可用 AI 识别墙体、门、窗和房间。我从项目启动起带领前端团队，并负责 Python AI 微服务方向（自研计算机视觉检测模型、基于队列的 worker）：几何编辑器、PDF 工作流、在浏览器中通过 ONNX Runtime Web 运行的 YOLO 模型，以及大型图纸的性能优化。"
+    },
+    "fs": {
+      "companyName": "FirstStep",
+      "position": "React、Node.js 全栈开发",
+      "description": "无代码 B2B 平台（约 100 家企业客户），用于训练计算机视觉模型（分类、检测、分割）并导出为 Android 应用。我开发了核心页面、数据集上传与训练流程、标注画布、身份认证和订阅功能。"
+    },
+    "ic": {
+      "companyName": "Integral Commodities SA",
+      "position": "React 前端开发",
+      "description": "聚合物、化肥和硫磺出口商的企业网站：产品与价格搜索、地图、响应式布局。"
+    },
+    "amdb": {
+      "companyName": "AMDB",
+      "position": "Python 全栈开发",
+      "description": "为细胞学与遗传学研究所开发的服务，用于存储、检索和分析科研与实验数据。"
+    },
+    "hobbio": {
+      "description": "我自己的小型创业项目：面向 iOS、Android 和 Web 的兴趣、活动与地点发现应用。从头到尾独立开发 —— Expo 应用在商店发布 110 多个版本，NestJS 后端与队列，YooKassa 订阅，Kubernetes。"
+    },
+    "present": "至今",
+    "inqi": {
+      "companyName": "InQI",
+      "position": "高级全栈工程师<0></0>Team Lead",
+      "description": "用于场地规划的 AEC/GIS 平台，约 10,000 名用户，现以 B2B 为主：基于 ArcGIS 的 Web 编辑器、iOS/Android 应用、几何与导出服务以及 AI 助手。我设计了 AI 成本控制系统，参与开发 AI 助手（OpenAI Agents SDK、部署在 AWS Lambda 上的 MCP 工具、SSE），实现了带 AI 额度的 Stripe 订阅，并发布了 60 多个移动端版本。"
+    },
+    "aid": {
+      "companyName": "AI Diagnostics",
+      "position": "Node.js、AWS<0></0>Tech Lead",
+      "description": "面向诊所的 B2B 产品：用 AI 分析数字听诊器的录音。桌面应用支持设备连接、云同步和自动更新。我搭建了 AWS 基础设施和 Node.js 后端，用于存储和同步设备数据，并实现了固件和应用的版本注册表。"
+    },
+    "reelabs": {
+      "description": "我自己的小型创业项目：基于 Telegram 的 AI 短视频服务 —— LLM 脚本、HeyGen 数字人、ElevenLabs 配音、在 AWS Lambda 上用 Remotion 渲染、YooKassa 计费。"
+    },
+    "clientProject": "客户项目",
+    "bw": {
+      "position": "高级全栈工程师 · Team Lead / Tech Lead",
+      "description": "AI 软件开发公司（成立于 2003 年），为国际客户打造 AI 智能体、文档 AI 和 SaaS 产品。我参与长期客户项目，通常同时负责两个，主要项目如下。",
+      "other": "此外还有为其他客户做的 AI 项目：用 LLM 从邮件和 PDF 中提取采购订单并写入 ERP（Gemini、FastAPI、Azure），基于混合检索和机器学习排序的 SKU 匹配（Qdrant、LightGBM），从语音到短视频的处理流水线（Whisper、GPT），基于 RAG 的多智能体文档审核（LangGraph、pgvector）。"
+    },
+    "caseStudy": "在 Businessware 网站了解更多",
+    "news": {
+      "companyName": "ADS Newspapers",
+      "position": "Python、DevOps<0></0>高级工程师",
+      "description": "为欧洲地方报纸出版商打造的 AI 流水线，把静态 PDF 报纸变成可交互版本：YOLO 模型找出每页的广告区块，Gemini 确认广告并提取其 URL，验证后的链接被插入到精确坐标。我开发了 Python / FastAPI 服务以及基于 GCP 和 S3 的事件驱动云架构。"
+    }
+  },
+  "contact": {
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "留言",
+    "additionalText": "你也可以通过以下方式直接联系我：",
+    "send": "发送",
+    "or": "或"
+  },
+  "errors": {
+    "required": "必填项",
+    "format": "格式无效"
+  },
+  "preview": {
+    "open": "打开",
+    "openInNewTab": "在新标签页中打开",
+    "zoomOut": "缩小",
+    "zoomIn": "放大",
+    "zoomReset": "重置缩放",
+    "close": "关闭",
+    "loading": "网站加载中…",
+    "officialSite": "官方网站",
+    "businesswareSite": "Businessware 网站",
+    "ownProject": "个人项目"
+  }
+}

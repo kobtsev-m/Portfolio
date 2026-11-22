@@ -2,10 +2,11 @@ import { Dispatch, FC, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { useOpenPreview } from '~/components/templates';
-import { BarsIcon, WorldIcon, ResumeRu, ResumeEn } from '~/assets';
+import { BarsIcon, ResumeRu, ResumeEn } from '~/assets';
+import { isRussian } from '~/locales/i18n';
+import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { Theme } from '~/types';
 import {
-  Box,
   ClearButton,
   Column,
   CustomButton,
@@ -24,16 +25,12 @@ interface NavProps {
 
 export const Nav: FC<NavProps> = (props) => {
   const { navCollapse, setNavCollapse, ...restProps } = props;
-  const { t, i18n } = useTranslation();
-
-  const toggleLanguage = async () => {
-    await i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
-  };
+  const { t } = useTranslation();
 
   const openPreview = useOpenPreview();
 
   const openResume = () => {
-    const resumeUrl = i18n.language === 'en' ? ResumeEn : ResumeRu;
+    const resumeUrl = isRussian() ? ResumeRu : ResumeEn;
     // Phones render PDFs in a frame poorly, so they keep opening a new tab.
     if (window.innerWidth < 768) {
       window.open(resumeUrl, '_blank');
@@ -47,12 +44,7 @@ export const Nav: FC<NavProps> = (props) => {
       <Column xs={12} sm={20} xl={10} flex align='center'>
         <Wrapper>
           <NavItem>
-            <ClearButton onClick={toggleLanguage}>
-              <Box mr={{ xs: '0', lg: '0.2rem' }}>
-                <CustomIcon src={WorldIcon} width='45px' height='45px' />
-              </Box>
-              <Box hideAt='lg'>{i18n.language === 'en' ? 'EN' : 'RU'}</Box>
-            </ClearButton>
+            <LanguageSwitcher />
           </NavItem>
           <NavItem>
             <ThemeToggleButton {...restProps} />

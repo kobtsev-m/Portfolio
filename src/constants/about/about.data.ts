@@ -8,6 +8,6 @@ export const aboutData = {
     { name: 'PostgreSQL / PostGIS / Redis', importance: 1 },
     { name: 'Cloud (AWS / Azure / GCP)', importance: 1 },
     { name: 'DevOps (Docker / Kubernetes / CI & CD)', importance: 1 },
-    { name: 'Team Management', importance: 1 }
+    { name: 'Team Management', key: 'teamManagement', importance: 1 }
   ]
 };

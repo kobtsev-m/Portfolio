@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useOpenPreview } from '~/components/templates';
 import { animated, config, useSpring } from 'react-spring';
 import { ResumeRu, ResumeEn } from '~/assets';
+import { isRussian } from '~/locales/i18n';
 import { Box, CustomButton } from '~/components/atoms';
 import { Wrapper, NavItem } from './NavCollapse.styles';
 
@@ -16,7 +17,7 @@ const AnimatedWrapper = animated(Wrapper);
 
 export const NavCollapse: FC<NavCollapseProps> = (props) => {
   const { navCollapse, setNavCollapse } = props;
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   const effect = useSpring({
     transform: navCollapse ? 'translateY(0vh)' : 'translateY(100vh)',
@@ -26,7 +27,7 @@ export const NavCollapse: FC<NavCollapseProps> = (props) => {
   const openPreview = useOpenPreview();
 
   const openResume = () => {
-    const resumeUrl = i18n.language === 'en' ? ResumeEn : ResumeRu;
+    const resumeUrl = isRussian() ? ResumeRu : ResumeEn;
     // Phones render PDFs in a frame poorly, so they keep opening a new tab.
     if (window.innerWidth < 768) {
       window.open(resumeUrl, '_blank');

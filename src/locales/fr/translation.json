@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "resume": "CV"
+  },
+  "intro": {
+    "title": "Michael Kobtsev",
+    "subtitle": "Senior Full-Stack Engineer · Tech Lead",
+    "description": "Je conçois des produits avec de l’IA de bout en bout : web, mobile, backend, cloud et paiements. Python, TypeScript, React, Node.js, agents LLM et outils.",
+    "animate": "Animer"
+  },
+  "about": {
+    "text": "Bonjour, je suis Michael — <0>ingénieur Full-Stack avec plus de 7 ans d’expérience professionnelle</0>, y compris en tant que Team Lead et Tech Lead.<1></1><1></1>Depuis 2021, je travaille chez <0>Businessware Technologies</0>, une société de développement logiciel spécialisée en IA, sur des projets clients au long cours. Je construis des <0>produits avec l’IA au cœur</0> : agents LLM et outils (OpenAI Agents SDK, MCP, RAG), maîtrise des coûts d’IA, pipelines d’IA pour les documents et la vidéo — et je les mène de l’architecture à la production, y compris les publications mobiles, l’infrastructure et les paiements.<1></1><1></1>Je suis basé à Bangkok, en Thaïlande (UTC+7), et je travaille à distance avec des équipes internationales. <0>Ouvert aux postes Senior / Tech Lead et aux missions en freelance.</0>",
+    "technologies": "Compétences",
+    "teamManagement": "Management d’équipe"
+  },
+  "projects": {
+    "webSite": "Site officiel",
+    "openSourceRepository": "Dépôt open source",
+    "readMore": "En savoir plus",
+    "otherProjects": "Projets personnels",
+    "commercial": "Commerciaux",
+    "demo": "Personnels",
+    "showMore": "Afficher plus",
+    "hide": "Masquer",
+    "bf": {
+      "companyName": "Bushfire",
+      "position": "React, Python Full-Stack<0></0>Team Lead",
+      "description": "Détection des feux de forêt par IA sur 50 à 100 caméras 360° en direct en Californie, en Australie et en Afrique, avec alertes aux services d’urgence. J’ai dirigé l’équipe (recrutement, onboarding, planification, relation client) et j’ai été le principal contributeur de l’application web : vues des caméras, détections et un vaste panneau d’administration en React + GraphQL (AWS AppSync), ainsi que le backend serverless sur AWS."
+    },
+    "wo": {
+      "companyName": "Destini Takeoff",
+      "position": "Front-End et Python AI<0></0>Team Lead",
+      "description": "Outil de métrés sur plans de construction utilisé par des dizaines de milliers de personnes — « AutoCAD dans le navigateur » avec détection par IA des murs, portes, fenêtres et pièces. Dès le départ, j’ai dirigé l’équipe front-end et le pôle des microservices d’IA en Python (modèles de vision par ordinateur maison, workers sur files d’attente) : éditeur de géométrie, flux de travail PDF, un modèle YOLO dans le navigateur avec ONNX Runtime Web, optimisation des performances sur les plans lourds."
+    },
+    "fs": {
+      "companyName": "FirstStep",
+      "position": "Développeur Full-Stack React, Node.js",
+      "description": "Plateforme B2B no-code (~100 entreprises clientes) pour entraîner des modèles de vision par ordinateur (classification, détection, segmentation) et les exporter sous forme d’apps Android. J’ai développé les pages principales, l’import de jeux de données et les flux d’entraînement, le canevas d’annotation, l’authentification et les abonnements."
+    },
+    "ic": {
+      "companyName": "Integral Commodities SA",
+      "position": "Développeur Front-End React",
+      "description": "Site vitrine d’un exportateur de polymères, d’engrais et de soufre : recherche de produits et de prix, cartes, mise en page adaptative."
+    },
+    "amdb": {
+      "companyName": "AMDB",
+      "position": "Développeur Full-Stack Python",
+      "description": "Service pour l’Institut de cytologie et de génétique permettant de stocker, rechercher et analyser les travaux de recherche et les expériences."
+    },
+    "hobbio": {
+      "description": "Ma propre petite startup : application de découverte de loisirs, d’événements et de lieux pour iOS, Android et le web. Je l’ai construite de bout en bout — app Expo avec plus de 110 publications sur les stores, backend NestJS avec files d’attente, abonnements YooKassa, Kubernetes."
+    },
+    "present": "aujourd’hui",
+    "inqi": {
+      "companyName": "InQI",
+      "position": "Senior Full-Stack Engineer<0></0>Team Lead",
+      "description": "Plateforme AEC/SIG d’aménagement de terrains avec ~10 000 utilisateurs, désormais orientée B2B : éditeur web basé sur ArcGIS, app iOS/Android, services de géométrie et d’export et un assistant IA. J’ai conçu le système de maîtrise des coûts d’IA, travaillé sur l’assistant (OpenAI Agents SDK, outils MCP sur AWS Lambda, SSE), mis en place les abonnements Stripe avec crédits IA et livré plus de 60 versions mobiles."
+    },
+    "aid": {
+      "companyName": "AI Diagnostics",
+      "position": "Node.js, AWS<0></0>Tech Lead",
+      "description": "Produit B2B pour les cliniques : analyse par IA d’enregistrements de stéthoscopes numériques. Application de bureau avec connexion des appareils, synchronisation cloud et mise à jour automatique. J’ai construit l’infrastructure AWS et le backend Node.js pour stocker et synchroniser les données des appareils, avec un registre des versions du firmware et de l’app."
+    },
+    "reelabs": {
+      "description": "Ma propre petite startup : service sur Telegram pour des reels vidéo générés par IA — scripts LLM, avatars HeyGen, voix ElevenLabs, rendu Remotion sur AWS Lambda, facturation YooKassa."
+    },
+    "clientProject": "projet client",
+    "bw": {
+      "position": "Senior Full-Stack Engineer · Team Lead / Tech Lead",
+      "description": "Société de développement logiciel spécialisée en IA (depuis 2003) qui crée des agents IA, de l’IA documentaire et des produits SaaS pour des clients internationaux. Je travaille sur des projets clients au long cours, généralement deux en parallèle ; les principaux sont présentés ci-dessous.",
+      "other": "Également des projets d’IA pour d’autres clients : extraction par LLM de bons de commande depuis les e-mails et les PDF vers l’ERP (Gemini, FastAPI, Azure), rapprochement de SKU avec recherche hybride et classement ML (Qdrant, LightGBM), pipeline de la voix aux clips vidéo (Whisper, GPT), relecture de documents multi-agents avec RAG (LangGraph, pgvector)."
+    },
+    "caseStudy": "En savoir plus sur Businessware",
+    "news": {
+      "companyName": "ADS Newspapers",
+      "position": "Python, DevOps<0></0>Senior Engineer",
+      "description": "Pipeline d’IA pour des éditeurs de presse régionale européens qui rend interactives les éditions PDF statiques : un modèle YOLO repère les blocs publicitaires sur chaque page, Gemini confirme l’annonce et extrait son URL, et les liens validés sont insérés aux coordonnées exactes. J’ai construit le service Python / FastAPI et l’infrastructure cloud événementielle sur GCP et S3."
+    }
+  },
+  "contact": {
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "additionalText": "Vous pouvez aussi m’écrire directement par l’un de ces moyens :",
+    "send": "Envoyer",
+    "or": "Ou"
+  },
+  "errors": {
+    "required": "Champ obligatoire",
+    "format": "Format non valide"
+  },
+  "preview": {
+    "open": "Ouvrir",
+    "openInNewTab": "Ouvrir dans un nouvel onglet",
+    "zoomOut": "Dézoomer",
+    "zoomIn": "Zoomer",
+    "zoomReset": "Réinitialiser le zoom",
+    "close": "Fermer",
+    "loading": "Chargement du site…",
+    "officialSite": "Site officiel",
+    "businesswareSite": "Site de Businessware",
+    "ownProject": "Projet personnel"
+  }
+}
