@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.cb9b1323.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.cb9b1323.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ca41b68a.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ca41b68a.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.1df2450b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1df2450b.js.map",
     "static/js/2.7d95aee8.chunk.js": "/Portfolio/static/js/2.7d95aee8.chunk.js",
@@ -33,11 +33,12 @@
     "static/media/integral-preview.0d6ecb8d.png": "/Portfolio/static/media/integral-preview.0d6ecb8d.png",
     "static/media/integral.661cee56.svg": "/Portfolio/static/media/integral.661cee56.svg",
     "static/media/light-moon.9e498298.svg": "/Portfolio/static/media/light-moon.9e498298.svg",
+    "static/media/linkedin-circle.ef71d9a1.svg": "/Portfolio/static/media/linkedin-circle.ef71d9a1.svg",
     "static/media/mail-link.e1ed3d0c.svg": "/Portfolio/static/media/mail-link.e1ed3d0c.svg",
     "static/media/news-preview.ce602ab4.jpg": "/Portfolio/static/media/news-preview.ce602ab4.jpg",
     "static/media/news.a3d68008.svg": "/Portfolio/static/media/news.a3d68008.svg",
-    "static/media/resume-en.25d81829.pdf": "/Portfolio/static/media/resume-en.25d81829.pdf",
-    "static/media/resume-ru.5185a42f.pdf": "/Portfolio/static/media/resume-ru.5185a42f.pdf",
+    "static/media/resume-en.5a277073.pdf": "/Portfolio/static/media/resume-en.5a277073.pdf",
+    "static/media/resume-ru.161c9840.pdf": "/Portfolio/static/media/resume-ru.161c9840.pdf",
     "static/media/telegram-brands.2edc5f39.svg": "/Portfolio/static/media/telegram-brands.2edc5f39.svg",
     "static/media/telegram-link.27377ddf.svg": "/Portfolio/static/media/telegram-link.27377ddf.svg",
     "static/media/website-link.5eb025a9.svg": "/Portfolio/static/media/website-link.5eb025a9.svg",
@@ -48,6 +49,6 @@
   "entrypoints": [
     "static/js/runtime-main.1df2450b.js",
     "static/js/2.7d95aee8.chunk.js",
-    "static/js/main.cb9b1323.chunk.js"
+    "static/js/main.ca41b68a.chunk.js"
   ]
 }
