@@ -16,7 +16,7 @@ export const AboutText = styled.p`
 export const ProfileLinks = styled.div`
   display: flex;
   gap: 0.3rem;
-  margin-top: 0.35rem;
+  margin-top: 0.6rem;
   a {
     display: block;
     width: 0.6rem;
