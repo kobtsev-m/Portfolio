@@ -5,7 +5,9 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { Transition, animated, config } from 'react-spring';
 import { aboutData, SIDE_NAV_MIN_OFFSET } from '~/constants';
 import { useContainerOffset } from '~/hooks';
-import { GithubIcon, GitlabIcon } from '~/assets';
+import { GithubIcon, GitlabIcon, LinkedinIcon } from '~/assets';
+import { LINKEDIN_URL } from '~/constants';
+import { isRussian } from '~/locales/i18n';
 import { Box, Container, Row, Column, CustomButton } from '~/components/atoms';
 import { BlockHeader } from '~/components/molecules';
 import {
@@ -22,6 +24,12 @@ const profileLinks = [
   { label: 'GitHub', href: 'https://github.com/kobtsev-m', icon: GithubIcon },
   { label: 'GitLab', href: 'https://gitlab.com/kobtsev-m', icon: GitlabIcon }
 ];
+
+const linkedinLink = {
+  label: 'LinkedIn',
+  href: LINKEDIN_URL,
+  icon: LinkedinIcon
+};
 
 export const About: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +48,10 @@ export const About: FC = () => {
             </AboutText>
             {showProfileLinks && (
               <ProfileLinks>
-                {profileLinks.map((link) => (
+                {(isRussian()
+                  ? profileLinks
+                  : [...profileLinks, linkedinLink]
+                ).map((link) => (
                   <a
                     key={link.href}
                     href={link.href}

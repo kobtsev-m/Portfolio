@@ -1,6 +1,7 @@
 import TelegramIcon from './icons/telegram-brands.svg';
 import GithubIcon from './icons/github-brands.svg';
 import GitlabIcon from './icons/gitlab-circle.svg';
+import LinkedinIcon from './icons/linkedin-circle.svg';
 import DarkMoonIcon from './icons/dark-moon.svg';
 import LightMoonIcon from './icons/light-moon.svg';
 import BarsIcon from './icons/bars-solid.svg';
@@ -55,6 +56,7 @@ export {
   TelegramIcon,
   GithubIcon,
   GitlabIcon,
+  LinkedinIcon,
   DarkMoonIcon,
   LightMoonIcon,
   BarsIcon,

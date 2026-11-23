@@ -4,3 +4,5 @@ export * from './snapshots.data';
 
 // The side rail with GitHub / GitLab icons is shown only when the page has this much free space on each side (px).
 export const SIDE_NAV_MIN_OFFSET = 140;
+
+export const LINKEDIN_URL = 'https://linkedin.com/in/kobtsev-m';

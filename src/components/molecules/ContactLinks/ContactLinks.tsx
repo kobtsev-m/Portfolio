@@ -19,7 +19,7 @@ export const ContactLinks: FC = () => {
             <CustomIcon src={MailLinkIcon} width='1rem' height='1rem' />
           </Box>
         </a>
-        <a href='https://wa.me/79134600184' rel='noreferrer' target='_blank'>
+        <a href='https://wa.me/kobtsev_m' rel='noreferrer' target='_blank'>
           <Box position='absolute' top='0.6rem' right='0.45rem'>
             <CustomIcon
               src={WhatsappLinkIcon}
