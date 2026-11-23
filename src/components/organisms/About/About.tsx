@@ -50,7 +50,7 @@ export const About: FC = () => {
               <ProfileLinks>
                 {(isRussian()
                   ? profileLinks
-                  : [...profileLinks, linkedinLink]
+                  : [linkedinLink, ...profileLinks]
                 ).map((link) => (
                   <a
                     key={link.href}
