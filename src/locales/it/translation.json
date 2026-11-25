@@ -22,9 +22,6 @@
     "webSite": "Sito ufficiale",
     "openSourceRepository": "Repository open source",
     "readMore": "Scopri di più",
-    "otherProjects": "Progetti personali",
-    "commercial": "Commerciali",
-    "demo": "Personali",
     "showMore": "Mostra altro",
     "hide": "Nascondi",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Sviluppatore Full-Stack Python",
       "description": "Servizio per l’Istituto di Citologia e Genetica per archiviare, cercare e analizzare ricerche ed esperimenti."
     },
-    "hobbio": {
-      "description": "La mia piccola startup: app per scoprire hobby, eventi e luoghi su iOS, Android e web. L’ho realizzata dall’inizio alla fine — app Expo con oltre 110 rilasci negli store, backend NestJS con code, abbonamenti YooKassa, Kubernetes."
-    },
     "present": "oggi",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
       "description": "Prodotto B2B per cliniche: analisi con l’IA delle registrazioni di stetoscopi digitali. App desktop con connessione ai dispositivi, sincronizzazione cloud e aggiornamento automatico. Ho realizzato l’infrastruttura AWS e il backend Node.js per archiviare e sincronizzare i dati dei dispositivi, con un registro delle versioni di firmware e app."
-    },
-    "reelabs": {
-      "description": "La mia piccola startup: servizio su Telegram per reel video generati con l’IA — script LLM, avatar HeyGen, voci ElevenLabs, rendering Remotion su AWS Lambda, pagamenti YooKassa."
     },
     "clientProject": "progetto per un cliente",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "Chiudi",
     "loading": "Caricamento del sito…",
     "officialSite": "Sito ufficiale",
-    "businesswareSite": "Sito di Businessware",
-    "ownProject": "Progetto personale"
+    "businesswareSite": "Sito di Businessware"
   }
 }

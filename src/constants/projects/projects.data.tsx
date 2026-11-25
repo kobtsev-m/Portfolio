@@ -13,8 +13,6 @@ import {
   InqiIcon,
   InqiPreviewImg,
   NewsIcon,
-  HobbioIcon,
-  ReelabsIcon,
   NewsPreviewImg,
   DestiniIcon,
   WoPreviewImg
@@ -183,24 +181,6 @@ export const projectsData = {
       ],
       previewImg: AmdbPreviewImg,
       siteLink: 'https://amdb.online',
-      githubLink: ''
-    }
-  ],
-  demo: (t: TFunction) => [
-    {
-      projectName: 'Hobbio',
-      icon: HobbioIcon,
-      description: t('projects.hobbio.description'),
-      technologies: ['Expo', 'NestJS', 'PostgreSQL', 'Redis', 'Kubernetes'],
-      demoLink: '',
-      githubLink: ''
-    },
-    {
-      projectName: 'Reelabs',
-      icon: ReelabsIcon,
-      description: t('projects.reelabs.description'),
-      technologies: ['NestJS', 'BullMQ', 'OpenAI', 'Remotion', 'AWS Lambda'],
-      demoLink: '',
       githubLink: ''
     }
   ]

@@ -22,9 +22,6 @@
     "webSite": "공식 웹사이트",
     "openSourceRepository": "오픈소스 저장소",
     "readMore": "자세히 보기",
-    "otherProjects": "개인 프로젝트",
-    "commercial": "상용",
-    "demo": "개인",
     "showMore": "더 보기",
     "hide": "접기",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Python 풀스택 개발자",
       "description": "세포학·유전학 연구소를 위해 연구와 실험 데이터를 저장, 검색, 분석하는 서비스."
     },
-    "hobbio": {
-      "description": "직접 만든 작은 스타트업: iOS, Android, 웹용 취미·이벤트·장소 탐색 앱. 처음부터 끝까지 직접 개발했습니다 — 스토어에 110회 이상 출시한 Expo 앱, 큐를 사용하는 NestJS 백엔드, YooKassa 구독, Kubernetes."
-    },
     "present": "현재",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
       "description": "병원용 B2B 제품: 디지털 청진기 녹음을 AI로 분석합니다. 기기 연결, 클라우드 동기화, 자동 업데이트를 지원하는 데스크톱 앱. 기기 데이터를 저장·동기화하는 AWS 인프라와 Node.js 백엔드, 펌웨어와 앱의 버전 레지스트리를 구축했습니다."
-    },
-    "reelabs": {
-      "description": "직접 만든 작은 스타트업: 텔레그램 기반 AI 영상 릴스 서비스 — LLM 스크립트, HeyGen 아바타, ElevenLabs 음성, AWS Lambda에서의 Remotion 렌더링, YooKassa 결제."
     },
     "clientProject": "고객 프로젝트",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "닫기",
     "loading": "사이트를 불러오는 중…",
     "officialSite": "공식 웹사이트",
-    "businesswareSite": "Businessware 웹사이트",
-    "ownProject": "개인 프로젝트"
+    "businesswareSite": "Businessware 웹사이트"
   }
 }

@@ -11,8 +11,6 @@ import CaretLightIcon from './icons/caret-light.svg';
 import InqiIcon from './icons/inqi.png';
 import AidIcon from './icons/aid.svg';
 import NewsIcon from './icons/news.svg';
-import HobbioIcon from './icons/hobbio.png';
-import ReelabsIcon from './icons/reelabs.png';
 import BfIcon from './icons/bf.png';
 import DestiniIcon from './icons/destini.png';
 import FsIcon from './icons/fs.png';
@@ -66,8 +64,6 @@ export {
   InqiIcon,
   AidIcon,
   NewsIcon,
-  HobbioIcon,
-  ReelabsIcon,
   BfIcon,
   DestiniIcon,
   FsIcon,

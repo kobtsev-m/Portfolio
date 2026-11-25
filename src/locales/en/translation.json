@@ -22,9 +22,6 @@
     "webSite": "Official Web Site",
     "openSourceRepository": "Open Source Repository",
     "readMore": "Read More",
-    "otherProjects": "Own projects",
-    "commercial": "Commercial",
-    "demo": "Own",
     "showMore": "Show more",
     "hide": "Hide",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Python Full-Stack developer",
       "description": "Service for the Institute of Cytology and Genetics to store, search and analyse research and experiments."
     },
-    "hobbio": {
-      "description": "My own small startup: hobby, event and place discovery app for iOS, Android and web. I built it end to end — Expo app with 110+ store releases, NestJS backend with queues, YooKassa subscriptions, Kubernetes."
-    },
     "present": "present",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
       "description": "B2B product for clinics: AI analysis of digital stethoscope recordings. Desktop app with device connection, cloud sync and auto-update. I built the AWS infrastructure and the Node.js backend for storing and syncing device data, with a firmware / app version registry."
-    },
-    "reelabs": {
-      "description": "My own small startup: Telegram-first service for AI video reels — LLM scripts, HeyGen avatars, ElevenLabs voice, Remotion rendering on AWS Lambda, YooKassa billing."
     },
     "clientProject": "client project",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "Close",
     "loading": "Loading the site…",
     "officialSite": "Official website",
-    "businesswareSite": "Businessware website",
-    "ownProject": "Own project"
+    "businesswareSite": "Businessware website"
   }
 }

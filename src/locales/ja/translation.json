@@ -22,9 +22,6 @@
     "webSite": "公式サイト",
     "openSourceRepository": "オープンソースリポジトリ",
     "readMore": "詳しく見る",
-    "otherProjects": "個人プロジェクト",
-    "commercial": "商用",
-    "demo": "個人",
     "showMore": "もっと見る",
     "hide": "閉じる",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Python フルスタック開発者",
       "description": "細胞学・遺伝学研究所向けに、研究や実験データを保存・検索・分析するサービス。"
     },
-    "hobbio": {
-      "description": "自分の小さなスタートアップ：iOS、Android、Web 向けの趣味・イベント・スポット発見アプリ。一人で一貫して開発しました —— Expo アプリでストアに 110 回以上リリース、キュー付きの NestJS バックエンド、YooKassa のサブスクリプション、Kubernetes。"
-    },
     "present": "現在",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js、AWS<0></0>Tech Lead",
       "description": "クリニック向け B2B プロダクト：デジタル聴診器の録音を AI で解析します。デバイス接続、クラウド同期、自動アップデートに対応したデスクトップアプリ。デバイスデータの保存・同期のための AWS インフラと Node.js バックエンド、ファームウェアとアプリのバージョン管理を構築しました。"
-    },
-    "reelabs": {
-      "description": "自分の小さなスタートアップ：Telegram ベースの AI 動画リール生成サービス —— LLM による台本、HeyGen のアバター、ElevenLabs の音声、AWS Lambda 上の Remotion レンダリング、YooKassa による課金。"
     },
     "clientProject": "クライアント案件",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "閉じる",
     "loading": "サイトを読み込み中…",
     "officialSite": "公式サイト",
-    "businesswareSite": "Businessware のサイト",
-    "ownProject": "個人プロジェクト"
+    "businesswareSite": "Businessware のサイト"
   }
 }

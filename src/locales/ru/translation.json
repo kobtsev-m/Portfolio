@@ -22,9 +22,6 @@
     "webSite": "Официальный сайт",
     "openSourceRepository": "Open Source репозиторий",
     "readMore": "Подробнее",
-    "otherProjects": "Собственные проекты",
-    "commercial": "Коммерческие",
-    "demo": "Свои",
     "showMore": "Показать больше",
     "hide": "Скрыть",
     "ic": {
@@ -52,9 +49,6 @@
       "position": "Python Full-Stack разработчик",
       "description": "Сервис для Института цитологии и генетики: хранение, поиск и анализ исследований и экспериментов."
     },
-    "hobbio": {
-      "description": "Мой собственный небольшой стартап: приложение для поиска хобби, событий и мест (iOS, Android, веб). Сделал его целиком — приложение на Expo, 110+ релизов в сторах, бэкенд на NestJS с очередями, подписки через ЮKassa, Kubernetes."
-    },
     "present": "н.в.",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
       "description": "B2B-продукт для клиник: AI-анализ записей цифровых стетоскопов. Desktop-приложение с подключением к устройствам, облачной синхронизацией и автообновлением. Построил инфраструктуру AWS и бэкенд на Node.js для хранения и синхронизации данных, реестр версий прошивок и приложения."
-    },
-    "reelabs": {
-      "description": "Мой собственный небольшой стартап: сервис AI-видеороликов с Telegram-ботом — сценарии через LLM, аватары HeyGen, голос ElevenLabs, рендеринг Remotion на AWS Lambda, оплата через ЮKassa."
     },
     "clientProject": "клиентский проект",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "Закрыть",
     "loading": "Загружаем сайт…",
     "officialSite": "Официальный сайт",
-    "businesswareSite": "Сайт Businessware",
-    "ownProject": "Собственный проект"
+    "businesswareSite": "Сайт Businessware"
   }
 }

@@ -22,9 +22,6 @@
     "webSite": "Offizielle Website",
     "openSourceRepository": "Open-Source-Repository",
     "readMore": "Mehr lesen",
-    "otherProjects": "Eigene Projekte",
-    "commercial": "Kommerziell",
-    "demo": "Eigene",
     "showMore": "Mehr anzeigen",
     "hide": "Ausblenden",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Python Full-Stack-Entwickler",
       "description": "Service für das Institut für Zytologie und Genetik zum Speichern, Suchen und Analysieren von Forschungsdaten und Experimenten."
     },
-    "hobbio": {
-      "description": "Mein eigenes kleines Startup: App zum Entdecken von Hobbys, Events und Orten für iOS, Android und Web. Komplett selbst gebaut — Expo-App mit über 110 Store-Releases, NestJS-Backend mit Queues, YooKassa-Abos, Kubernetes."
-    },
     "present": "heute",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js, AWS<0></0>Tech Lead",
       "description": "B2B-Produkt für Kliniken: KI-Analyse von Aufnahmen digitaler Stethoskope. Desktop-App mit Geräteanbindung, Cloud-Synchronisation und Auto-Update. Ich habe die AWS-Infrastruktur und das Node.js-Backend zum Speichern und Synchronisieren der Gerätedaten gebaut, mit einem Versionsregister für Firmware und App."
-    },
-    "reelabs": {
-      "description": "Mein eigenes kleines Startup: Telegram-basierter Service für KI-Video-Reels — LLM-Skripte, HeyGen-Avatare, ElevenLabs-Stimmen, Remotion-Rendering auf AWS Lambda, YooKassa-Abrechnung."
     },
     "clientProject": "Kundenprojekt",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "Schließen",
     "loading": "Website wird geladen…",
     "officialSite": "Offizielle Website",
-    "businesswareSite": "Businessware-Website",
-    "ownProject": "Eigenes Projekt"
+    "businesswareSite": "Businessware-Website"
   }
 }

@@ -22,9 +22,6 @@
     "webSite": "官方网站",
     "openSourceRepository": "开源仓库",
     "readMore": "了解更多",
-    "otherProjects": "个人项目",
-    "commercial": "商业项目",
-    "demo": "个人",
     "showMore": "显示更多",
     "hide": "收起",
     "bf": {
@@ -52,9 +49,6 @@
       "position": "Python 全栈开发",
       "description": "为细胞学与遗传学研究所开发的服务，用于存储、检索和分析科研与实验数据。"
     },
-    "hobbio": {
-      "description": "我自己的小型创业项目：面向 iOS、Android 和 Web 的兴趣、活动与地点发现应用。从头到尾独立开发 —— Expo 应用在商店发布 110 多个版本，NestJS 后端与队列，YooKassa 订阅，Kubernetes。"
-    },
     "present": "至今",
     "inqi": {
       "companyName": "InQI",
@@ -65,9 +59,6 @@
       "companyName": "AI Diagnostics",
       "position": "Node.js、AWS<0></0>Tech Lead",
       "description": "面向诊所的 B2B 产品：用 AI 分析数字听诊器的录音。桌面应用支持设备连接、云同步和自动更新。我搭建了 AWS 基础设施和 Node.js 后端，用于存储和同步设备数据，并实现了固件和应用的版本注册表。"
-    },
-    "reelabs": {
-      "description": "我自己的小型创业项目：基于 Telegram 的 AI 短视频服务 —— LLM 脚本、HeyGen 数字人、ElevenLabs 配音、在 AWS Lambda 上用 Remotion 渲染、YooKassa 计费。"
     },
     "clientProject": "客户项目",
     "bw": {
@@ -103,7 +94,6 @@
     "close": "关闭",
     "loading": "网站加载中…",
     "officialSite": "官方网站",
-    "businesswareSite": "Businessware 网站",
-    "ownProject": "个人项目"
+    "businesswareSite": "Businessware 网站"
   }
 }
