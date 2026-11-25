@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.c2e46544.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c2e46544.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.15ec95af.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.15ec95af.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.1df2450b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1df2450b.js.map",
-    "static/js/2.7d95aee8.chunk.js": "/Portfolio/static/js/2.7d95aee8.chunk.js",
-    "static/js/2.7d95aee8.chunk.js.map": "/Portfolio/static/js/2.7d95aee8.chunk.js.map",
+    "static/js/2.f37fe436.chunk.js": "/Portfolio/static/js/2.f37fe436.chunk.js",
+    "static/js/2.f37fe436.chunk.js.map": "/Portfolio/static/js/2.f37fe436.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/js/2.7d95aee8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.7d95aee8.chunk.js.LICENSE.txt",
+    "static/js/2.f37fe436.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f37fe436.chunk.js.LICENSE.txt",
     "static/media/aid-preview.ba35fe18.jpg": "/Portfolio/static/media/aid-preview.ba35fe18.jpg",
     "static/media/aid.9976dac7.svg": "/Portfolio/static/media/aid.9976dac7.svg",
     "static/media/amdb-preview.dd60c61f.png": "/Portfolio/static/media/amdb-preview.dd60c61f.png",
@@ -48,7 +48,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1df2450b.js",
-    "static/js/2.7d95aee8.chunk.js",
-    "static/js/main.c2e46544.chunk.js"
+    "static/js/2.f37fe436.chunk.js",
+    "static/js/main.15ec95af.chunk.js"
   ]
 }
